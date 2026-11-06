@@ -2,1656 +2,2333 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-  <meta name="theme-color" content="#080a0c" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="TagGrid" />
-  <meta name="description" content="Precision 4cm x 2cm Price Tag Sheet Generator with 10mm X/Y Gap & 300/600 DPI PDF Export" />
-  <title>TagGrid Studio — Precision Price Tag Sheet Generator</title>
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAADAFBMVEUSFRkmKS5FSVAwNDo4PEIaHCI9QUhPU1sMDREeICZWWmMAAABkaHFdYWl3e4Nvc3qEiJB9gYr19/nm6eyQlJqlqa/S1NjGyM2xtLmXmqK5vMOdoafZ3OLc4ea9wcYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeayhDAAABAHRSTlP//////////////wD/////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/dYjwAAHxxJREFUeNrFnQdjpLgOgHEHAgNhmJZk7///zGfJTTaGzCR777jdXNom+qxquUzzdvQM/hm3T7/3GGP/mPAWH3746PDI7BHxORSx2f1KkMf+h28rD3/m0TsCVmVNDxOMPq8CmG+eZwT/VnRhJd8Kz/ae5wHqItv/nhpyKrh+fsSPhd9naJ6Qnz9nK7m9aPmi8E/IXyPYADw5zoey/0R69oT4NYQS4Eei58LvWrz8xdDbp4O/XXcIMP5o5Av5qwRCil/KHwnkPgAffm07KL+uR5zfWo+j6GS3B8B5b/+ErGV+akNEbKsdrp3xy185Lws/0apBdKwOwH/qvLn4hEBzTBnfjP9z4x4e924NgP8YYFcB3Izze486EL92gPzZAvxQ+qMYpHn/uSwPw6X8tQMDAL5lneo6pVQJYKszK8/w7TNO00jKO/8OVk2bAm8cpq9luU6DL/Ky3Aguhn8zXzNGm9oggTO5/0nOVadsTC4A3PdOPf2XfcWP9TRo8lGfFGB/chF+rAYey7L2vBh/piVzoce+LzkdZs63IUkJpqLpKCY0fqRyAC/QYKjQff87AOsD/bpWLMgGE287liMHMFubAgCW5O88gKIAKC4AcE7C55MAnACUKuDTBFGoIEAATAAlgBkq1i9EALDyKwYAQgU3SAADaoASPAvgI6kHyPKAHIZtFkMTCh5cAqgqgIugiknlAGQOwClAIqgCDBUAp4OtBqzo47jNASxpoAQYjaqYkAew8tsQxHgA6AKAyQEiwfMAfBeg7ysAUQMlADNmVwMM7B/+nwC6HYAQfl4C4A6gQEAAuQfAShMSfBcA7MepIQKoAMBLAE/wNAC6gHPiopKzAGzrA3LHByTjuyYE9r8DYDYaQAJTzwPDXhjVuwClEe0BCKn2NMCC/BQAK4odAPSD56KQ9i4gd01o14kLAM3Ungai/LkGtgBJNkvwdB6gAKUGDNsFYLkPQK28B+Dsvw4QihGTacAWksY8mYm5PtCAYZC4ZO7EuubEmu0BsCS/9WaNLu0AGAHguQbAgio+IKdBkllY70bdFQ58O3tnCFCWnnasSeDxlg5zFWtCDa2cUUwbPoUij1bhC+AEAJDkHLANF1qE07htyPHTRD8c+tB2sW+rQWuU26knzRjcgNFZLXGYtfUD2xbcmjMyBIIXAH0JAFIjwDhtG4oWgFMAQ0vhOsB2zkx1ZQFQYVwgwMi2M2YjGFUglNMEYMg0wPPi3GxKczShJEpPx7JqQv1WIuvWpQnZUAnzFTSh0oDg84UJqUjAjgD6SiqohNHauKZaKAcA0UM1mvmAdv66cWKoP0MtBEwYhdSzAP12UgPlJZnMfwtg80Amvc211l9lmrY4AK+TDQDI7zNxGHYbhRIAQwC+Z0I9z+YHJAoFrzwEEHkig1ptvdo55iBwJkPygPBhKQdw9Q+pRp3QLwCYOM0cw1f1bL3S9Hb0ewgfz2gAQaw0IP35dnncltugWJbINKsBOPkTgNNCtzWhY4DcipwJhex1BCCwiEMAK+b4CdJ/zvZ5ny1Cz1hKZDFB5ABQP1g9eIBgQyXA2H8HwPuNCZEolNqJJQC2Q20iY3K4n5c/H+v7+zyvgHBaAaFjLqx3UQE5QKw/vQbUFkABwLcaAB3oDKAIo9iOq5qQUHwE6c/39f30DqN/Op2A42TN6W461IDSogaA8rMEoNSOBp4AIFYEAKFREwEkNhRLACsWP93Oy/W+zu/wWPGnYRgmQHk/PSyCzUlCC80qAKT+BAClfqwBFH4CHTgnHsCJrcgGnNhgInNz+QwAEuh8O5+vlxklx8c1xADh5LVwkZ3WrAIA8dP3QbGc7lL98BMNJD9wJhTKAwfgG7oJwNo+BkzvtKcgfujhDU4PVgtf58vYVQCUkCl57ZuQeh6A+9lv4cSGlNARwEb11UqPY28HeprsiFvjSa3HYeitIizC6XQ5L6toSoBOQPykAKrqxC9oQHs/8GE0d+K8FrLyT8tldWM/v9vRzsUPXVRrS+DQl/M5InRYTsP4d6Qk8j7gEV4C0JtWaZoPYCfR1Io5Ic8fKD6O/WDfDpn8sQ1sEcA/Ps/nmTUeQLnx9wsBLAEkE2oKAH4IoCGGavzCyaATaw6ZODlxEJtz4VdRLmcnPgz+ezH6CQBq9uFkEafpAgjWb5npsbAA+9HQS5cEoNsCqJc04Oqi08mXQTL4QAnAhuUxnzBiDtM8W/nL7RTUG6BZbxV1X84nm/LGARKgG/jChGoaUN9poJyf2LS9zjjXT04sSwBxvtkAg6sJ0/tjnbb7QsYhAph+BEsChPN15qfZTu3CimSo6MpMfAigydwPhzebS/Hhczm/G05HnfScXdF5WVanABtmPq/XdSr3u9iv+OWSCWB8Zji9f5yv5+VhRJfNX1QjWNM0yv6Hj9L7AHpyKdM/1pDfIeW8YzTHmGjD43K1iRXrAWveMcifnDFP9lPLfV39t88fy/Ixn8gzwfed3I9zeppw/OFz8+O82PHxNodZw7030Eltb440EHd0YGeuj63ewb3ph9uyXOzPRnOyYcdwTVaC0C2sJYACHM/j6+sxkQUqN+4g7rrasUm5DfLCu63xluUUpr5uAYTlM1D4ggNovvUBbZ04f2AV+X7viQkZLWLy1eB/NoW53IWhc5hW4gM4fjCgExQZ5/PFjXWcPg22Sr39uSu3ohSjDphQNifOAfpDgMwn0K/fTz0nANSJLQwzy+Udx97FzvF0yuR3AOufTyP49HUbhgQABO/rer8GB+5iMVdM6l8BCGvAUmsPYyf1fYqdZRRitysUCClzTVNfANjc8DW09tc33fXDfl9PmoGD9bKzcNUE5in1WwC6lB2KOWHrItxGUGqASzYvs5ffSz0NVHwHcFndGDfyPCOA/+H2q5b+7DsroAHGtgBdEYWydtpWA+4t1jx2Ymzfex+F5IMf8AKA8eUCCkjy1wCmC/cRvrnfbUpw3WFszprpfTifLABDsWFfhNrRQNM8BxCX3/07Yhitt2ojhfcBEQE0Z7ev91z+CGASwGkVbucMa+YPB+BUAFOO03C9oAaUT172T8WJMSE8ASCzTRwBAOzHZFEImz5cTMsKeYHWDsMGYJxm4f20me/9EE0IE+VpuN8a5go1pYITlwA+pW0AdAHAcw3IBGDdNwH4rpXk5/vJVf45QLaH1KbeOXTUm8/VpqokPwI8zsxHUFc+7AGoOoDOAKSf+2qchMEbOVkADZYPnowAsYiwBuQCaF9oIGsPQ2h1Gmj4HcNolN8CTMO8yAYt3y0NV/PAVgN+M0UC0AHAFZw4cekBYAYnNmAxQ64BO4tZsfof+hwg222KRjQPaCT8cgI4/F0YmBFgOvcA0IHrdmKjgSYCuEZjAoA/o1+3diuPzgfciruftzgTcmsu0krvfMARnD/Af4vqmQL4Etd+coapxfBA+eHTcU4EldHX3HZuCuZlfgLAB3oA0HGDi9dAiEAOI/qA8wNnQuAAdhaDXZNcAVkhFop0KHxgSj/iGpBJ8ktta9P+dmk7Wj83OwDUhIKvjjGiYQaIGTdugbAAuHLtI4/xAAJnMW4SMO4A0KZxDExYNpI9agBwuTW0oO5KANk0EUDVAPL5gJvqBieWYuqdE0PpI8SgQ/P568NPwvoqQLlyQkyKtJM0THVWDEPoA4p9owEPoHMNUIDkxPanA8Dceyc2mIl7t4UbDKiiAJM0UJ3qadgWSNc1x8GMp4WDCmBe09UBiAqOAGKbQZO3zoR88xbKByNxJWl5YALIAUwE2N0uSDwYHphjDucps6EMoHkdIF/5jQC+lABPtgDXG2QwmBxm8hvjAHZ2y0o3DSIdeZwkX9c2ToD/AkDW8XcAfunazwGM7NYzdlHGsVBAFcAHCelTIw8hQQSAj489Dfg5cQmQRB4rq6HBie0b6ZzYlm3CV6McV3jN8okOnCnABICq9cSfrLkXHt/2A+/Hy9VF/60P7AO4WF8DcBUzzgB66ZxYOCfGdAyhSIABDRmACYdWtgAuTKP8OgH4xkY/wmbZs2iqTgwF0AbApC4VAShXLER4wwayhwx8wDrAfJ7RgYkLp5XwEsCv1Af5awDTGRoPTWFCUeoE0GQA8KfPtkDXVu0QIP1KC8D4+QIRqCcubL4D0NF5MwBhRpgan09t97QPeAAXbfp82ycXm4MXbKAr18z+dvZxPXkP3sSgqg/4yamOAOkXoAb60RYTvtzBoWesoY+saCCUDGO2LcJWupsqgE8DPVIz9tIakFs6wkKu7OOW1ejm3IHfLeWGUKMJDfdrtryf9gji1gm+1UDKI6UT69084GdkUoMBDW78aRBNJrSXxZIJydicNHiC4fMcWkNdt53QVDUQADJZORf5qilschhMZkLsfg1zyMG3sLLxHobKYY94KgKE1nSwAcDYOY2mqSs3IQLgNaCpBqo+kLagSPABGjZOLgJh2TNlsy++AQjhAbozadQrAKdlbMvmbg2geQ1ABACiAWMNyE1hoOwZNvLzYSy2O0lc4EljsAWw852FttBLDWzCKBH6VYDucg3ym3z6G708B8AN4XoXAHzAus3XnRo9AKhnNbD1ASFoIM0B2HCepyC376AU8cYBxA6ly1/6CKAfPxdRAjytgQ1Amn7V8sD17h0A2yWj36pGw04AIOMPgU3sAYymnxY7KX7WhLrvAIrN85kG2OojEA766CJ+n4dNBEina3z9swsAyxq3axObt98ANN8DbDa8JQDWQwQK8seUle/x6nsivi8P9wG0BZgXgzVb4yCaVwDEDoCsA9zu08kHHigAnPUUGTcCuKTljD8fdfIuH6fhfGlZmD026riUQABN91dJkQNsN3HGXXzd+gUlUO9PJTkH3mx2DADS2w9dDow76RLAMF0WFprPTVUDTekDmu5wiwBCfAPA+J8Vu0BuyF0OrmwS6XnYi+C6GqQVSTcyOsVwmwJcJRoAQMx9gKQBP0nEHkMs/48B7nesfvyo59GHHiQKlSKpm/cAbA67Xpm3ntg8eQYg/Nhe0p3adQBXC3WnK6zDDH7UCwBHgPsye72t+2lYdpsxnfymX5e+8TMv78ZbDRQ+4PTqn97vdDsCQA0w/rVC4hojwPbIvdsd3uvtvIXs7M0BxvMly7ruOYhCjQOQOUCIDFUAV42y+z++i5t2utcAuAeguZcAMAJg5TeXxXRN8wJAXQPh4XrPhLrp64SlG7EgCpAarA4gnzd6ALeKHX1Ac2NzMM9EV89ogHpUn/2eXQAmro+w9BItiACEVWU7J0KAfPzDGIWDMyIYkLne7XRLbQheAqAf6T0A9cAF3pR20ZICgCbTFlgo3MifnYbwAHB4el2EyQBU1YT4HgCEYVroWg1UTiPYTMz66wnl5xHAbAEw8IMT6/I0a00D4MHL3Ax868MZgOqYYV0dAIzQUIK6E9so9M/DyR82lJL6JzsXrZ1uqseh09krb0D8flWiT8svTUwHBEDZf9ALQkAA7M9Yr6vhghzE3x4tVb1p1g/nAFHynmgg3x0yPtaRb+7EoGHUzVTRg3krtGg3CmhZ1zatexom5tu7ZKoKMC3Lsg4jbUpVjqAMw3XGRmg/hlaW2xkx9puT2/369TWb3da6DhsYrP3013sHjixoL7Csii3oaVnOfQ4gdgHGCsA03T7TUir+f9x2FAPA48+fXYC4BQbD8OdZMpu7KYBwhc2zAIKb+fow+hsT4pcLVv6kbjMbD4gHood17vWBDziPtnIPy9TaIoFlJtR6E2JtS03oJIlTEACJG7OOopD9hR1EoOSzplgxIuehcbxg43seRPHsBj0EJDEF3G7WQXUrZHOYiWH/hxFJARmA/YUDlR8P3OFhEXpQ//IYx+iusMSocaE0LVuQJpL9yJjyGB/LAKBxaEcOGylCWID2m1JCMc6yVJE3h8tjv8whRAJ1+phCARf7zCa9X8hvZ+k8m3QFqYkC4KIFc14ba53sCYAiE+cArAKQP/xjHoj82OQx6f2shSSdWdJpI6sB2OfyhceTmuYJgKycBoBg3Q6A5YdOy+fymLBfTsoFbrguAIQf/5QMZXaFB0ljCDAsxk7DpPgRgPs9/qc6AGekFQA1fQwEwLfZXH8+LVlImqtINq8DQAi4XqAVqrufAcRzsSwC+N+wAdAf7xaAlDs6dcoTgJP/KQAM3nw9wyyGgWCS+zrCiv0CQLpUQLCdU7P4PD4h96Y+pyRrLWFFShD7CQAs+7EZAMyDbQpg0IOGNxzKHGxHc/WiBgJAipkFgBpgf9Lg1pJj/5fslaGz66wgDKNdAkAFaVOA68RJEFjwH5kQ1UB2q1IGIO6wv2fo9wBixqKBn3MittgA2BzmeunOgn4IwJ4CUPMDih0EIB34tJSpa20rAsDKPIAhyPz5hEaQX8WQ/x6A6i+YAcaeNlPpbh8PkCdeCpDOT4pQB3H+AA9WDCxIgQbQf7sXnFg+CSAuJ8xgY59fQuVWi2TsOeeLsjlAIAhvofpahhZPPUsUWXAWnFirvwrQoQH5Vltav+dGx12X+F4ufwnAUspBD+b89o+bekEWa36UB54DUOaOBgSnsWi9SeeLUm7k3wAwRgCwiJOuFc2dkEL/EoDtaeAy4/gXANrkDcNS/goA83nSTcLPcyuakMX+hgZ2ANTpc3QVRALAPoDJztBQ+cOB8y1AqL2sAi42BSAATFFU7gNC/T0AOw1zNSgCJEHBBehay0b+GkDqRbsiDi+9gOBTAMi/CMDW996v6HOTAdDmHe2DsUMA/PfWg693G4EEWJAIwv3SB3gO4L/SDA+cBGP92ZvUvob6jawPyUrZxnnl0js4bmPh1zOYDwCEtfh2J5G1hwBsF8Cf9NWfYRbvfSC2/EMdIcKJjs3jqlFa/YAGsAjsz6fW3buAWQx7WJL7RQG/RlNb4CimzRmAoVc/4m4VEPEx92nxtE93InFDt/2kAmkLULYWsRHwcUMkA5flYYvaWhuH9jLj0n3eR638GFYZafc1gDcrQRH6OfZ+2ggnH0w88QBCk/pNVjqHNR9Ad+fmtKC5KA0xyHWhm9ZtBspLCezMUYmfBfB615epN8lWjImCah4Dj9y7+rHmA7BQbIu4B27Lsj7QxdK/lc/kgTbzAXEEAMeITmvvj75hqDeGeq0kC8lSVq6urAC4eTAc1PAAIvYZ2per0eZbADafwIJiqZlSVwKQlYn7EQDUhMsAqUoBgBaHAO2RBuyH7NiE1OxdWKK9pNyL1aeUtO3DngUw/PYBKQBCDYcsBkbUcesDRgBGNqX8BkCwYw0ojhMx7rcpJQ1g3Ndh5ItZ7wGAL+IEjr5qOuEracjE3ok7lTvxQR74HsASfD78HT5SUgDtC7hKv+0YwMZQW8R5+1GC7Chra9XoLzVg/zWboBZ1BAHA1wNoVuwVAF/E+Y3ESnQitR/+JQAbpPV6mdwFxqmARq+GPBU6p88CuCIunAUTJh0pCSZ0DCBeBoCLQobLY/R35LpaSLqN67ic8AIAKgB25vrThFa9wnusdeLGObEWf8WJ/cVdDK8bbsT75d1dwOiDJnepLPWRngSwHgy708N+CDYI0i3/QRg9BFDxymdrR/xxsc48+ikAhiSpU1uyDqBLpcI07D2updpEahrRvJTIxIsA8ZKTRg33xziOLpxyv6mo1rLd1wAY0P0fxUh3nLdK/KsAgUGBHa33ucdoBMWdz2GHAPTyHWdA01mSno/iHDyZ+WKu1twt88BrAG784bIfvO6q6e+XsJkYp1XiGx/IANCAvtZk1FCKwSTSTSlJJm5zJ/4NALkmBzaTt3q+z7i1j5f1zxMAVnGfXx21Ce7fF4d54GcAijpxuCet0Ux83idYopevmpBLAWMbAWwM4sEBxL8LoLwGYE2tbYYPtCPpYtHzAJAC7DyeAAgZY5BIAG1aJP4LAOHWf4V3NloACB2f/8xuivwCQEoBAKC8BTlbhykZeLLEBQ4E/IkTdxUA5wMCb8/HDo5uYJrKL3d0Zi2Oa6GUB9CD/5xaeqIBkq8JTSBlbOE4SFysaUnR+WOAjkgEOkBdNBZAMCVZN308eu48YR8gzYldEXfDoXf76RVaUEoCNgwJM9j0T/cZvJoH1EECcT+Wu46Z1Y5c7ydfZO+9HILo10efeunTGfNU23WxtLcejXsg4K9i4+1rEqotni7/zAGAyveaFNtt/CmmUzzVbOZ/LkPf92Z/Q8389TX7c1dmHK53ocO6TrwGIl0jZfqPZfmC/RrwHTKet3SNEL+IYj8+AKAvIaAl+Yc8nPiSk/F7tzGHzbcH2fG6OTbH32+32Z/INP3jnHYqut3LsAOyD3scZM8vy3KzCYbDuavU6ucyr0bazMYESzdCKd6VRz/8NnI/5YOtFvbfK/+RtTJ++ecUzajiAqcTF96D+/PkZgGx0aOt+TQaJLFVRAtZ+f6PLU5b+KhNe2xY3YTamgZYV6uFGPOXVDBtlZQdrmia6XYf/LmkfSeGvTv3W7ENkXFsq7RkQ1w/xgnad3mgjZ6aruPq4v1cXby03ScCPJzcSRu2ywNGrVhvK17dXOuruP6qK+J0AYBdLBKF7A+Gi/LEYSZuUxRqcw1gByLMX7IXLnDn6VB+tQWwE0F+/xh4HQFb9BiCrnOr8vCGawFOAy2d0IgjDSSAwoRcAyL5Q0cBmMZLz60emLHjKMOFAx2Wkqq1dvTp7s/WBQJs2UH512sZn5nBDzCRQQJ2fSH8CCTWhwDtsQ+4ORjRANxWpMETwAc6Fi/ew2OOOBv/vM08NI9EbkLgwcO5zzOT8osZbv8Sy5q7aFbdsQYgcRQmBNK5F9zJrskMpbTE2x7AhLp4RVQ8q2wR+ttt4HHDRwJw7XRbxJUacAuT1AdSMcfqPtBWMnHw3y4CdOSiUhY9QOClOV3hA/GwtbUjtn5djO9Xx6iK/UfXiSsAmOugFADcV6Ls0Ikhc2cAOPAdmlAXZwBEA3CPo7uxKAI02WFrbJA0/OM6FQscmoflVFUAhE56DSAj2AGgYbTzNWcdAK8LZ+5FGNzuZmkn+HB/tfXDLt0hCL/HVgtG0IOGbv58uTZNCWC8WCZ2cp0TW+GwGjVHAG0OwPzMEZ04M6EUP8MtFdGEOnINYhSr7dY/K5chnsJ6CJQ8Z0MVgN/JDJnIVFqLSQdbgLgNNvmAf6UdTl/2K9557vzXW/3WB3LXbPntOmmtw1YDmD9fL+2mTxIXVDN/JSv1kaAG0CQVbAGKu24z+Q8BOv8b5vOHCYuusJq3/hF0x7wDCBa0CxAJ8ihENNA8oYFkP08DQFK4n70dSbgh4zy0CrbZMwIQLagwIZkNNssX+ZzY+ybUUQAVblrN5Fd7YTQBIMJ4vbpb8s1gPm44cB1EJBbcPS3J7wN4ggDQ+vQl0mkCDxDv561poLhmr6YBT5CsBIqL9XwH8x/gfHkMjXidIdpEtKAjAEcQAbzlVzTg+ybEhLCFImD9hKkuB9BNOmuandfPZ6Ctvp1nADivVCaGm5FxVlGZ4m72TgOBB4hSJw0gwp4JuUsaS/kzDRwC2EnIdL7O65+rKkUCBlLeH2gAvz0CFHmAmFAUuZyRMXoq04nFs83jojvoAbTs83q9sFKk1h2KSQKm8USAYkoPFlrOyCKA/fNGCFSxwa2yyt6Z7JP6sL1u07QWaYjId6pQfnX4Ig+xANY8vgpK8E0II9kdW5kG3hAgNg/znRmmdo7MmLA3HCSmxLUTK52sbreh2Fn/nZuu8lJG2YvGsUwDb14Dyt3wrxW5FlyIel8o88lud1uPN+pQvTsvxDjYdtRsWGYeot0+ijV1E2qDBlzB2anoxDAXhqlUo8oHo1BwiyMnjjsZvltyYYdOjK6kGoIAYbRpiAm9+dLNTrgsgCIXHIp9gOZJgFaI71btskJn59tbQoAALCjAA4D5yAwA8tcugIpHNX8E0LwK0FFLIwBtBIDCwWsgzHWV76cn7/cA8tca+AEAlCK7GnhzAFQDrn5gefhyqYsC5KL8KwDg8wxlB4KmAHgLAHgAAQDwpSJC/VMAhFNP/1cAchjU64CaUA0gjn8OEObuAJC1hr8B+H4PGWsPo1CbTrM6ggrAm4oAjMhPm7tKpXNnL2lgB6B9TgMudbBo/ioBNE5+/+KyuAHeA8T6OQHQWypygG80gLXfN8uObMfiXKnTutLJl0pAgADCjz8BcImMXrPd5D4QJNIvmFBnK49OfQOwo4E2TABoe90SIEBXALx5KbnrGm5MKA16UY0em5CtW6aJMfUjDaQpACwxNSn5hmojf4lr1yjhbLvA0SiV1UIvADBxWpZpW2Z3T2iAFD+ogfgZJaj8EUDgaz9qf0Vqurxwu2qU3RymNxeSpsOssNX9tiw3vnOrQfWDg9eDjw8wMVa+zLvKroVSxYfNjx4m3pflvVrklce2Sd4qxn/n2bxO/ZvaeZqfP9YHxkGyn/yIfFK2Lz8BePv7AE3n9gy+KntVBdnn32oAb7Dq0rBg1izcNfYbAtwf8ipA7KDQaY+fvykMoW91gLdGduRm1XgE4f/9tL5/Xn9s2HrbA3iTpQ//B9I3daMnAG/7APbjv2X+vxj/58LPDsDbf6mAtqghnpB/C5Ah/FdOsKuJrbQVgLfciv4bQwre8J38VYANw3+liVwPdUl3AKp57b9TRrMv5v5X4OnUX3ia38azQxH/B0srTd5Cxo6gAAAAAElFTkSuQmCC" />
-  <link rel="apple-touch-icon" href="data:image/png;base64,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" />
-  <link rel="manifest" href="manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TagGrid Studio — Matte Monochrome Price Tag Sheet & 300 DPI PDF Generator</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- jsPDF for exact millimeter & 300/600 DPI PDF generation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <style>
-    :root {
-      --bg-deep: #060709;
-      --glass-pill: rgba(28, 32, 36, 0.56);
-      --glass-pill-active: rgba(44, 50, 56, 0.72);
-      --glass-border: rgba(255, 255, 255, 0.12);
-      --glass-highlight: rgba(255, 255, 255, 0.24);
-      --text-main: #f4f6f8;
-      --text-muted: rgba(244, 246, 248, 0.58);
-      --text-dim: rgba(244, 246, 248, 0.34);
-      --pearl: #f2f4f7;
-    }
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            matte: {
+              bg: '#0A0A0A',
+              panel: '#121212',
+              card: '#1C1C1C',
+              hover: '#242424',
+              border: '#262626',
+              borderHover: '#404040',
+              muted: '#737373',
+              sub: '#A3A3A3',
+              text: '#F5F5F5'
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Tactile Matte Black & White Design System + Optional Black Glassmorphism Mode */
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      user-select: none;
-      -webkit-font-smoothing: antialiased;
     }
-
     body {
-      background: var(--bg-deep);
-      color: var(--text-main);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif;
-      min-height: 100vh;
-      overflow-x: hidden;
-      position: relative;
+      background-color: #0A0A0A;
+      color: #F5F5F5;
+      transition: background-color 0.2s ease;
     }
 
-    /* Atmospheric Obsidian Crag & Volumetric Mist Backdrop */
-    .ambient-scene {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 82% -8%, rgba(210, 222, 230, 0.34) 0%, rgba(120, 134, 145, 0.14) 28%, rgba(12, 15, 18, 0.92) 65%, #050608 100%);
+    /* Optional Black Glassmorphism Theme Override */
+    body.glass-mode {
+      background-color: #050508;
+      background-image:
+        radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(255, 255, 255, 0.04) 0%, transparent 45%);
+    }
+    body.glass-mode header,
+    body.glass-mode .bg-matte-panel {
+      background-color: rgba(18, 18, 22, 0.68) !important;
+      backdrop-filter: blur(24px) saturate(140%);
+      -webkit-backdrop-filter: blur(24px) saturate(140%);
+      border-color: rgba(255, 255, 255, 0.14) !important;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    body.glass-mode .bg-matte-card {
+      background-color: rgba(28, 28, 34, 0.62) !important;
+      border-color: rgba(255, 255, 255, 0.12) !important;
     }
 
-    .crag-svg {
-      position: absolute;
-      inset: 0;
-      width: 100%;
+    /* Stepper Button Styling */
+    .stepper-btn {
+      width: 28px;
       height: 100%;
-      object-fit: cover;
-      opacity: 0.92;
-    }
-
-    .noise-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 1;
-      pointer-events: none;
-      opacity: 0.04;
-      background-image: radial-gradient(rgba(255,255,255,0.85) 0.6px, transparent 0.6px);
-      background-size: 3px 3px;
-    }
-
-    /* App Layout */
-    .app-shell {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 460px 1fr;
-      min-height: 100vh;
-      max-width: 1680px;
-      margin: 0 auto;
-      padding: 28px 32px;
-      gap: 36px;
-      align-items: center;
-    }
-
-    @media (max-width: 1080px) {
-      .app-shell {
-        grid-template-columns: 1fr;
-        padding: 20px 16px 40px;
-        gap: 28px;
-      }
-    }
-
-    /* Left Column: Smoked Glass Stadium-Pill Console */
-    .console-wrap {
-      position: relative;
-      padding: 18px 28px 18px 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    /* Right-Edge Telemetry Line (from Reference UI) */
-    .telemetry-rail {
-      position: absolute;
-      top: 18px;
-      bottom: 18px;
-      right: 0;
-      width: 2px;
-      background: rgba(255, 255, 255, 0.18);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-
-    .telemetry-rail::before {
-      content: "";
-      width: 2.5px;
-      height: 22%;
-      background: #ffffff;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-      border-radius: 2px;
-    }
-
-    .telemetry-top,
-    .telemetry-bottom {
-      position: absolute;
-      right: 10px;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      color: rgba(255, 255, 255, 0.78);
-      white-space: nowrap;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .telemetry-top { top: 0; }
-    .telemetry-bottom { bottom: 0; }
-
-    /* Top Badge Row */
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      padding-right: 44px;
-    }
-
-    .brand-chip {
       display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 7px 16px 7px 8px;
-      border-radius: 999px;
-      background: rgba(58, 66, 74, 0.48);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 8px 24px rgba(0, 0, 0, 0.35);
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-main);
-    }
-
-    .brand-chip img {
-      width: 26px;
-      height: 26px;
-      border-radius: 7px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    }
-
-    .install-pill-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 7px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      color: #fff;
-      font-size: 12px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      backdrop-filter: blur(16px);
-    }
-
-    .install-pill-btn:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-1px);
-    }
-
-    /* Editorial Headline */
-    .hero-head {
-      padding: 4px 40px 2px 2px;
-    }
-
-    .hero-title {
-      font-size: 32px;
-      font-weight: 400;
-      letter-spacing: -0.025em;
-      line-height: 1.15;
-      color: #ffffff;
-      margin-bottom: 6px;
-    }
-
-    .hero-sub {
-      font-size: 14px;
-      color: var(--text-muted);
-      letter-spacing: 0.06em;
-      font-variant-numeric: tabular-nums;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .unit-switcher {
-      display: inline-flex;
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 999px;
-      padding: 2px;
-    }
-
-    .unit-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 9px;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: all 0.18s;
-      text-transform: uppercase;
-    }
-
-    .unit-btn.active {
-      background: rgba(255, 255, 255, 0.22);
-      color: #fff;
-    }
-
-    /* Stadium-Pill Sliders (Exact Reference Style) */
-    .pills-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      padding-right: 26px;
-    }
-
-    .stadium-pill {
-      position: relative;
-      height: 68px;
-      border-radius: 999px;
-      background: var(--glass-pill);
-      backdrop-filter: blur(28px) saturate(130%);
-      -webkit-backdrop-filter: blur(28px) saturate(130%);
-      border: 1px solid var(--glass-border);
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.14),
-        0 14px 34px rgba(0, 0, 0, 0.42);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 26px;
-      overflow: hidden;
-      cursor: ew-resize;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-
-    .stadium-pill:hover {
-      border-color: rgba(255, 255, 255, 0.26);
-    }
-
-    /* Inner Sliding Capsule with Vertical Pipe Indicator */
-    .pill-fill {
-      position: absolute;
-      top: 3px;
-      bottom: 3px;
-      left: 3px;
-      min-width: 64px;
-      max-width: calc(100% - 6px);
-      border-radius: 999px;
-      background: linear-gradient(90deg, rgba(58, 66, 74, 0.42) 0%, rgba(74, 83, 92, 0.62) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 4px 0 18px rgba(0, 0, 0, 0.35);
-      pointer-events: none;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-right: 16px;
-      transition: width 0.06s linear;
-    }
-
-    .pill-pipe {
-      width: 2.5px;
-      height: 18px;
-      border-radius: 2px;
-      background: #ffffff;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-    }
-
-    /* Equidistant Dot Track */
-    .pill-dots {
-      position: absolute;
-      left: 33%;
-      right: 25%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .pill-dots span {
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.22);
-    }
-
-    .pill-label {
-      position: relative;
-      z-index: 2;
-      font-size: 15px;
-      font-weight: 400;
-      color: rgba(255, 255, 255, 0.92);
-      letter-spacing: 0.01em;
-      pointer-events: none;
-    }
-
-    .pill-value-btn {
-      position: relative;
-      z-index: 3;
-      background: transparent;
-      border: none;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 500;
-      font-variant-numeric: tabular-nums;
-      cursor: text;
-      padding: 4px 8px;
-      border-radius: 8px;
-      transition: background 0.15s;
-    }
-
-    .pill-value-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    /* Compact Secondary Pills Row */
-    .sub-pills-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      padding-right: 26px;
-    }
-
-    .mini-pill {
-      height: 48px;
-      border-radius: 999px;
-      background: rgba(26, 30, 34, 0.52);
-      backdrop-filter: blur(22px);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      padding: 0 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 13px;
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .mini-pill:hover {
-      border-color: rgba(255, 255, 255, 0.25);
-      color: #fff;
-    }
-
-    .mini-pill strong {
-      color: #fff;
-      font-weight: 500;
-    }
-
-    /* Connected 3-Orb Metaball Dock (Exact Reference Bottom Controls) */
-    .orb-dock-wrap {
-      display: flex;
-      justify-content: center;
-      padding-top: 8px;
-      padding-right: 26px;
-    }
-
-    .orb-dock {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(22, 25, 29, 0.62);
-      backdrop-filter: blur(28px);
-      -webkit-backdrop-filter: blur(28px);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.55);
-    }
-
-    .orb-btn {
-      width: 66px;
-      height: 66px;
-      border-radius: 50%;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      background: radial-gradient(circle at 35% 25%, rgba(68, 76, 84, 0.72), rgba(28, 32, 37, 0.85));
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 2px;
-      cursor: pointer;
-      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.22), 0 6px 16px rgba(0, 0, 0, 0.4);
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-
-    .orb-btn:hover {
-      transform: scale(1.05);
-      border-color: rgba(255, 255, 255, 0.35);
-    }
-
-    .orb-btn span {
-      font-size: 9px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.72);
-    }
-
-    .orb-btn.center-pearl {
-      width: 76px;
-      height: 76px;
-      background: radial-gradient(circle at 35% 25%, #ffffff 0%, #e4e8ec 70%, #cfd6dc 100%);
-      color: #0b0d10;
-      border: 1px solid #ffffff;
-      box-shadow:
-        0 0 28px rgba(255, 255, 255, 0.35),
-        inset 0 2px 4px rgba(255, 255, 255, 0.9);
-    }
-
-    .orb-btn.center-pearl span {
-      color: #16191d;
+      background-color: #141414;
+      color: #A3A3A3;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
       font-weight: 700;
+      transition: all 0.12s ease;
+      user-select: none;
+    }
+    .stepper-btn:hover {
+      background-color: #FFFFFF;
+      color: #0A0A0A;
+    }
+    .stepper-btn:active {
+      background-color: #D4D4D4;
+      color: #0A0A0A;
     }
 
-    /* Right Column: Interactive Precision Sheet Preview Stage */
-    .stage-panel {
-      position: relative;
-      height: calc(100vh - 56px);
-      min-height: 620px;
-      border-radius: 32px;
-      background: rgba(16, 19, 23, 0.52);
-      backdrop-filter: blur(28px);
-      -webkit-backdrop-filter: blur(28px);
-      border: 1px solid rgba(255, 255, 255, 0.13);
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.16),
-        0 24px 60px rgba(0, 0, 0, 0.55);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0A0A0A;
+      border-left: 1px solid #1A1A1A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2E2E2E;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4A4A4A;
     }
 
-    .stage-toolbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 22px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
-      background: rgba(10, 12, 15, 0.45);
-      flex-wrap: wrap;
-      gap: 10px;
+    /* Matte technical dot matrix drafting surface */
+    .matte-drafting-grid {
+      background-color: #0D0D0D;
+      background-image: radial-gradient(#262626 1px, transparent 1px);
+      background-size: 16px 16px;
     }
 
-    .toolbar-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
+    /* Flat architectural border for the physical sheet */
+    .sheet-matte-elevation {
+      border: 1px solid #3D3D3D;
+      box-shadow: 8px 8px 0px #050505;
     }
 
-    .stage-pill {
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      color: var(--text-main);
-      font-size: 12px;
+    /* Custom Matte Range Slider */
+    input[type="range"].matte-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      background: #262626;
+      height: 4px;
+      border-radius: 2px;
+      outline: none;
+    }
+    input[type="range"].matte-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+    /* Custom Matterange Slider */
+    input[type="range"].matte-slider::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+      background: #FFFFFF;
+      border: 1px solid #0A0A0A;
       cursor: pointer;
-      transition: all 0.18s;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
     }
 
-    .stage-pill:hover,
-    .stage-pill.active {
-      background: rgba(255, 255, 255, 0.18);
-      border-color: rgba(255, 255, 255, 0.32);
+    /* Hide native number spin buttons in favor of custom Matte +/- steppers */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
     }
 
-    .viewport-canvas-area {
-      position: relative;
-      flex: 1;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: grab;
-      background:
-        radial-gradient(circle at center, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size: 20px 20px;
-    }
-
-    .viewport-canvas-area:active {
-      cursor: grabbing;
-    }
-
-    #sheetCanvas {
-      box-shadow:
-        0 24px 60px rgba(0, 0, 0, 0.75),
-        0 0 0 1px rgba(255, 255, 255, 0.22);
+    /* Custom Matte Checkbox */
+    .matte-checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      background-color: #1A1A1A;
+      border: 1px solid #3D3D3D;
       border-radius: 3px;
-      transform-origin: center center;
-      transition: transform 0.05s ease-out;
-      background: #ffffff;
-    }
-
-    /* Floating Coordinate Inspector HUD */
-    .inspector-hud {
-      position: absolute;
-      bottom: 18px;
-      left: 18px;
-      right: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 18px;
-      border-radius: 999px;
-      background: rgba(14, 17, 20, 0.78);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      font-size: 12px;
-      color: var(--text-muted);
-      pointer-events: none;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .inspector-hud strong {
-      color: #fff;
-      font-variant-numeric: tabular-nums;
-    }
-
-    /* Modal Dialogs (Tag Studio & Install Guide) */
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      z-index: 50;
-      background: rgba(4, 6, 8, 0.76);
-      backdrop-filter: blur(16px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .modal-backdrop.open {
-      display: flex;
-    }
-
-    .modal-card {
-      width: 100%;
-      max-width: 480px;
-      border-radius: 28px;
-      background: rgba(22, 26, 31, 0.88);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.7);
-      padding: 26px;
-      color: #fff;
-    }
-
-    .modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 18px;
-    }
-
-    .modal-header h3 {
-      font-size: 19px;
-      font-weight: 500;
-    }
-
-    .close-btn {
-      background: rgba(255, 255, 255, 0.1);
-      border: none;
-      color: #fff;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
+      display: inline-grid;
+      place-content: center;
       cursor: pointer;
+      transition: background-color 0.1s ease, border-color 0.1s ease;
     }
-
-    .form-grid {
-      display: grid;
-      gap: 12px;
-      margin-bottom: 18px;
+    .matte-checkbox:hover {
+      border-color: #737373;
     }
-
-    .form-field label {
-      display: block;
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 5px;
+    .matte-checkbox:checked {
+      background-color: #FFFFFF;
+      border-color: #FFFFFF;
     }
-
-    .form-field input {
-      width: 100%;
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      background: rgba(0, 0, 0, 0.35);
-      color: #fff;
-      font-size: 14px;
-    }
-
-    .primary-modal-btn {
-      width: 100%;
-      padding: 12px;
-      border-radius: 999px;
-      border: none;
-      background: #ffffff;
-      color: #0b0d10;
-      font-weight: 600;
-      font-size: 14px;
-      cursor: pointer;
-    }
-
-    .step-list {
-      display: grid;
-      gap: 12px;
-      font-size: 13px;
-      line-height: 1.5;
-      color: rgba(255, 255, 255, 0.85);
-      margin-bottom: 18px;
-    }
-
-    .step-box {
-      padding: 12px 14px;
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    /* Print Media Query for Direct Native Vector Print/PDF Fallback */
-    @media print {
-      body { background: #fff; }
-      .ambient-scene, .noise-overlay, .console-wrap, .stage-toolbar, .inspector-hud, .modal-backdrop {
-        display: none !important;
-      }
-      .app-shell, .stage-panel, .viewport-canvas-area {
-        display: block !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: auto !important;
-      }
-      #sheetCanvas {
-        width: 100% !important;
-        height: auto !important;
-        box-shadow: none !important;
-        transform: none !important;
-      }
+    .matte-checkbox:checked::before {
+      content: "";
+      width: 8px;
+      height: 5px;
+      border-left: 2px solid #0A0A0A;
+      border-bottom: 2px solid #0A0A0A;
+      transform: rotate(-45deg) translate(1px, -1px);
     }
   </style>
 </head>
-<body>
+<body class="bg-matte-bg text-matte-text font-sans min-h-screen flex flex-col selection:bg-white selection:text-black">
 
-  <!-- Atmospheric Obsidian Crag & Mist Backdrop -->
-  <div class="ambient-scene">
-    <svg class="crag-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="rockShade" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#1c2126" />
-          <stop offset="45%" stop-color="#0d1013" />
-          <stop offset="100%" stop-color="#040507" />
-        </linearGradient>
-        <linearGradient id="rimLight" x1="100%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="rgba(220,230,238,0.28)" />
-          <stop offset="50%" stop-color="rgba(90,102,112,0.08)" />
-          <stop offset="100%" stop-color="rgba(10,12,15,0)" />
-        </linearGradient>
-      </defs>
-      <!-- Left Dramatic Obsidian Cliff Silhouette -->
-      <path d="M0,40 L185,110 L260,195 L380,245 L465,370 L585,435 L680,580 L795,645 L940,780 L1180,900 L0,900 Z" fill="url(#rockShade)" />
-      <!-- Crystalline Facet Highlights -->
-      <polygon points="0,40 185,110 130,220 0,180" fill="url(#rimLight)" />
-      <polygon points="185,110 260,195 380,245 270,310 150,240" fill="url(#rimLight)" />
-      <polygon points="380,245 465,370 585,435 430,490 310,360" fill="url(#rimLight)" />
-      <polygon points="585,435 680,580 795,645 620,710 490,560" fill="url(#rimLight)" />
-      <!-- Right Foreground Crag -->
-      <path d="M980,900 L1140,730 L1275,695 L1390,605 L1440,620 L1440,900 Z" fill="#080a0d" />
-      <polygon points="1140,730 1275,695 1390,605 1320,790" fill="url(#rimLight)" />
-    </svg>
+  <!-- Full-Window Drag & Drop Overlay (Solid Matte Monochrome) -->
+  <div id="globalDropOverlay" class="fixed inset-0 z-50 bg-[#0A0A0A] border-4 border-dashed border-white hidden flex-col items-center justify-center p-6 pointer-events-none">
+    <div class="bg-[#121212] border border-[#3D3D3D] p-8 rounded-lg text-center max-w-md">
+      <div class="w-14 h-14 mx-auto mb-4 rounded-md bg-white text-black flex items-center justify-center text-2xl font-bold">
+        <i class="fa-solid fa-arrow-down-long"></i>
+      </div>
+      <h2 class="text-lg font-bold tracking-tight text-white uppercase font-mono">Drop Image to Tile Sheet</h2>
+      <p class="text-xs text-[#A3A3A3] mt-2 font-mono">Supports PNG, JPG, WebP, SVG — Automatically mapped to your tag grid</p>
+    </div>
   </div>
-  <div class="noise-overlay"></div>
 
-  <!-- Hidden File Input -->
-  <input type="file" id="fileInput" accept="image/*" style="display:none" />
-
-  <main class="app-shell">
-    <!-- LEFT COLUMN: OBSIDIAN GLASS STADIUM CONSOLE -->
-    <section class="console-wrap">
-      <!-- Right-Edge Vertical Telemetry Line -->
-      <div class="telemetry-rail">
-        <span class="telemetry-top" id="railTop">4:10</span>
-        <span class="telemetry-bottom" id="railBottom">40:300</span>
-      </div>
-
-      <!-- Top Brand Chip & Install Trigger -->
-      <div class="top-bar">
-        <div class="brand-chip">
-          <img src="data:image/png;base64,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" alt="TagGrid Icon" />
-          <span>TagGrid Studio</span>
+  <!-- Top Navigation / Command Bar -->
+  <header class="bg-matte-panel border-b border-matte-border sticky top-0 z-30">
+    <div class="max-w-[1680px] mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <!-- Brand Identity -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-md bg-white text-black flex items-center justify-center font-mono font-bold text-base border border-white">
+          <i class="fa-solid fa-grip"></i>
         </div>
-        <button class="install-pill-btn" id="installBtn" title="Install App to Device">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/>
-          </svg>
-          <span>Install App</span>
-        </button>
-      </div>
-
-      <!-- Editorial Header + Unit Switcher -->
-      <div class="hero-head">
-        <h1 class="hero-title">Precision tag sheet...</h1>
-        <div class="hero-sub">
-          <span id="liveSummaryText">4cm × 2cm · 10mm X/Y · 40 tags</span>
-          <div class="unit-switcher">
-            <button class="unit-btn active" data-unit="cm">cm</button>
-            <button class="unit-btn" data-unit="mm">mm</button>
-            <button class="unit-btn" data-unit="in">in</button>
+        <div>
+          <div class="flex items-center gap-2.5">
+            <h1 class="font-bold text-white text-sm sm:text-base tracking-tight uppercase">TagGrid Studio</h1>
+            <span class="text-[10px] font-mono font-semibold uppercase px-2 py-0.5 rounded bg-[#1A1A1A] text-white border border-[#3D3D3D]">Matte Print Engine</span>
           </div>
+          <p class="text-[11px] text-matte-muted font-mono hidden sm:block">PRECISION PHYSICAL TILING • 4CM × 2CM • 10MM X/Y GAPS</p>
         </div>
       </div>
 
-      <!-- Stadium-Pill Sliders -->
-      <div class="pills-stack">
-        <!-- Tag Width Pill -->
-        <div class="stadium-pill" data-param="tagW" data-min="10" data-max="100" data-step="1">
-          <div class="pill-fill" id="fill-tagW" style="width: 42%;">
-            <div class="pill-pipe"></div>
-          </div>
-          <span class="pill-label">Tag Width</span>
-          <div class="pill-dots"><span></span><span></span><span></span><span></span><span></span></div>
-          <button class="pill-value-btn" id="val-tagW" title="Click to enter exact width">4 cm</button>
+      <!-- Live Telemetry Bar -->
+      <div class="hidden xl:flex items-center bg-[#0A0A0A] p-1 rounded-md border border-matte-border text-xs font-mono">
+        <div class="px-3 py-1 flex items-center gap-2 border-r border-matte-border">
+          <span class="text-matte-muted">TAG:</span>
+          <span id="headerTagSize" class="font-semibold text-white">4.0 × 2.0 cm</span>
         </div>
-
-        <!-- Tag Height Pill -->
-        <div class="stadium-pill" data-param="tagH" data-min="10" data-max="100" data-step="1">
-          <div class="pill-fill" id="fill-tagH" style="width: 28%;">
-            <div class="pill-pipe"></div>
-          </div>
-          <span class="pill-label">Tag Height</span>
-          <div class="pill-dots"><span></span><span></span><span></span><span></span><span></span></div>
-          <button class="pill-value-btn" id="val-tagH" title="Click to enter exact height">2 cm</button>
+        <div class="px-3 py-1 flex items-center gap-2 border-r border-matte-border">
+          <span class="text-matte-muted">GAP X/Y:</span>
+          <span id="headerGapSize" class="font-semibold text-white">10 × 10 mm</span>
         </div>
-
-        <!-- Horizontal Gap X Pill -->
-        <div class="stadium-pill" data-param="gapX" data-min="0" data-max="30" data-step="0.5">
-          <div class="pill-fill" id="fill-gapX" style="width: 38%;">
-            <div class="pill-pipe"></div>
-          </div>
-          <span class="pill-label">Gap X Axis</span>
-          <div class="pill-dots"><span></span><span></span><span></span><span></span><span></span></div>
-          <button class="pill-value-btn" id="val-gapX" title="Click to enter exact X gap">10 mm</button>
+        <div class="px-3 py-1 flex items-center gap-2 border-r border-matte-border">
+          <span class="text-matte-muted">SHEET:</span>
+          <span id="headerSheetSize" class="font-semibold text-white">A4 (210×297mm)</span>
         </div>
-
-        <!-- Vertical Gap Y Pill -->
-        <div class="stadium-pill" data-param="gapY" data-min="0" data-max="30" data-step="0.5">
-          <div class="pill-fill" id="fill-gapY" style="width: 38%;">
-            <div class="pill-pipe"></div>
-          </div>
-          <span class="pill-label">Gap Y Axis</span>
-          <div class="pill-dots"><span></span><span></span><span></span><span></span><span></span></div>
-          <button class="pill-value-btn" id="val-gapY" title="Click to enter exact Y gap">10 mm</button>
+        <div class="px-3 py-1 flex items-center gap-2 bg-[#1A1A1A] rounded-sm">
+          <span class="text-matte-sub">OUTPUT:</span>
+          <span id="headerGridCount" class="font-bold text-white">4 × 10 = 40 TAGS</span>
         </div>
       </div>
 
-      <!-- Secondary Quick-Toggle Pills -->
-      <div class="sub-pills-row">
-        <button class="mini-pill" id="sheetPresetBtn" title="Cycle A4 / Letter / A3">
-          <span>Paper</span>
-          <strong id="sheetPresetLabel">A4 · 210×297</strong>
+      <!-- Primary Actions -->
+      <div class="flex items-center gap-2">
+        <!-- UI Finish Toggle: Matte B&W vs Black Glassmorphism -->
+        <button id="themeToggleBtn" type="button" class="px-3 py-2 rounded-md border border-matte-border bg-matte-card hover:bg-matte-hover hover:border-matte-borderHover text-white font-mono text-xs flex items-center gap-2 transition" title="Switch between Matte B&W and Black Glassmorphism">
+          <i class="fa-solid fa-layer-group text-xs"></i>
+          <span id="themeToggleLabel">UI: Matte B&amp;W</span>
         </button>
-        <button class="mini-pill" id="fitModeBtn" title="Cycle Cover / Contain / Stretch">
-          <span>Image Fit</span>
-          <strong id="fitModeLabel">Stretch Fill</strong>
+
+        <button id="openDesignerBtn" type="button" class="px-3 py-2 rounded-md border border-matte-border bg-matte-card hover:bg-matte-hover hover:border-matte-borderHover text-white font-medium text-xs flex items-center gap-2 transition">
+          <i class="fa-solid fa-pen-ruler text-xs"></i>
+          <span class="hidden sm:inline">Tag Studio</span>
         </button>
-        <button class="mini-pill" id="dpiToggleBtn" title="Toggle 300 DPI / 600 DPI Print Quality">
-          <span>Print DPI</span>
-          <strong id="dpiLabel">300 DPI HQ</strong>
+
+        <button id="saveAppHtmlBtn" type="button" class="px-3 py-2 rounded-md border border-matte-border bg-matte-card hover:bg-matte-hover hover:border-matte-borderHover text-white font-medium text-xs flex items-center gap-2 transition" title="Download standalone installable HTML app file">
+          <i class="fa-solid fa-download text-xs"></i>
+          <span class="hidden md:inline">Install App</span>
         </button>
-        <button class="mini-pill" id="cropMarksBtn" title="Toggle Vector Crop & Trim Marks">
-          <span>Trim Marks</span>
-          <strong id="cropMarksLabel">Active</strong>
+
+        <button id="downloadPngBtn" type="button" class="px-3 py-2 rounded-md border border-matte-border bg-matte-card hover:bg-matte-hover hover:border-matte-borderHover text-white font-medium text-xs flex items-center gap-2 transition" title="Export 300 DPI PNG Sheet">
+          <i class="fa-regular fa-image text-xs"></i>
+          <span class="hidden xl:inline">PNG (300 DPI)</span>
+        </button>
+
+        <button id="downloadPdfBtn" type="button" class="px-4 py-2 rounded-md bg-white hover:bg-[#E5E5E5] active:bg-[#CCCCCC] text-black font-bold text-xs uppercase tracking-wider font-mono flex items-center gap-2 transition border border-white">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Export Print PDF</span>
         </button>
       </div>
+    </div>
+  </header>
 
-      <!-- Connected 3-Orb Metaball Action Dock -->
-      <div class="orb-dock-wrap">
-        <div class="orb-dock">
-          <!-- Left Orb: Upload Any Photo -->
-          <button class="orb-btn" id="uploadOrbBtn" title="Upload Photo or Drop Anywhere (Ctrl+V)">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <rect x="3" y="3" width="18" height="18" rx="3"/>
-              <circle cx="8.5" cy="8.5" r="1.5"/>
-              <path d="M21 15l-5-5L5 21"/>
-            </svg>
-            <span>Photo</span>
+  <!-- Main Studio Workspace -->
+  <main class="flex-1 max-w-[1680px] w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5 p-4 sm:p-6">
+
+    <!-- Left Control Column (4 Columns on Desktop) -->
+    <aside class="lg:col-span-4 xl:col-span-4 flex flex-col gap-4">
+
+      <!-- SECTION 01: IMAGE SOURCE & FITTING -->
+      <section class="bg-matte-panel rounded-lg border border-matte-border p-4">
+        <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-matte-border">
+          <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-sm bg-white text-black flex items-center justify-center text-[11px] font-bold">01</span>
+            Image Source &amp; Fit
+          </h2>
+          <span id="imageResolutionBadge" class="text-[11px] font-mono px-2 py-0.5 rounded-sm bg-matte-card text-matte-sub border border-matte-border">600 DPI SAMPLE</span>
+        </div>
+
+        <!-- Tactile Matte Drop Zone -->
+        <div id="dropZone" class="group border border-dashed border-[#404040] hover:border-white rounded-md p-3.5 transition bg-matte-card hover:bg-matte-hover cursor-pointer">
+          <input id="fileInput" type="file" accept="image/*" class="hidden" />
+          <div class="flex items-center gap-3.5">
+            <!-- Thumbnail Box -->
+            <div class="w-24 h-14 rounded-sm bg-[#0A0A0A] border border-matte-border flex items-center justify-center overflow-hidden shrink-0 p-1">
+              <img id="thumbPreview" src="" alt="Tag preview" class="max-w-full max-h-full object-contain" />
+            </div>
+            <!-- Details & Quick Actions -->
+            <div class="flex-1 min-w-0">
+              <p id="fileNameDisplay" class="text-xs font-mono font-semibold text-white truncate">Default_Price_Tag.png</p>
+              <p class="text-[11px] text-matte-muted mt-0.5">Click, Drop Image, or <span class="font-mono text-matte-sub">Ctrl+V</span> Paste</p>
+              <div class="mt-2 flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 text-[11px] font-mono font-semibold bg-white text-black px-2 py-0.5 rounded-sm">
+                  <i class="fa-solid fa-upload text-[10px]"></i> Browse
+                </span>
+                <button id="resetSampleBtn" type="button" class="text-[11px] font-mono text-matte-sub hover:text-white underline px-1">
+                  Reset Sample
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fit Mode, Background Fill Color & Rotation -->
+        <div class="grid grid-cols-12 gap-2.5 mt-3 pt-3 border-t border-matte-border">
+          <div class="col-span-5">
+            <label for="fitModeSelect" class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Fit Mode</label>
+            <select id="fitModeSelect" class="w-full rounded-md border border-matte-border bg-matte-card hover:border-matte-borderHover px-2.5 py-1.5 text-xs font-mono text-white focus:outline-none focus:border-white">
+              <option value="fill" selected>Stretch (Exact)</option>
+              <option value="contain">Contain (Fit)</option>
+              <option value="cover">Cover (Crop)</option>
+            </select>
+          </div>
+
+          <div class="col-span-3">
+            <label for="bgFillColorInput" class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Tag Fill</label>
+            <div class="flex items-center h-[30px] rounded-md border border-matte-border bg-matte-card px-1.5 gap-1.5">
+              <input id="bgFillColorInput" type="color" value="#ffffff" class="w-5 h-5 bg-transparent border-0 cursor-pointer p-0" title="Background fill color behind image" />
+              <span id="bgFillHexText" class="text-[10px] font-mono text-matte-sub uppercase">#FFF</span>
+            </div>
+          </div>
+
+          <div class="col-span-4">
+            <label class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Rotate</label>
+            <div class="grid grid-cols-4 border border-matte-border rounded-md overflow-hidden bg-matte-card h-[30px]">
+              <button type="button" data-rot="0" class="rot-btn text-[10px] font-mono font-bold bg-white text-black transition">0°</button>
+              <button type="button" data-rot="90" class="rot-btn text-[10px] font-mono text-matte-sub hover:text-white transition border-l border-matte-border">90°</button>
+              <button type="button" data-rot="180" class="rot-btn text-[10px] font-mono text-matte-sub hover:text-white transition border-l border-matte-border">180°</button>
+              <button type="button" data-rot="270" class="rot-btn text-[10px] font-mono text-matte-sub hover:text-white transition border-l border-matte-border">270°</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 02: TAG DIMENSIONS & X/Y GAPS -->
+      <section class="bg-matte-panel rounded-lg border border-matte-border p-4">
+        <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-matte-border">
+          <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center gap-2">
+            <span class="w-5 h-5 rounded-sm bg-white text-black flex items-center justify-center text-[11px] font-bold">02</span>
+            Tag Dimensions &amp; Gaps
+          </h2>
+
+          <!-- 3-Way Unit Switcher (cm / mm / in) -->
+          <div class="inline-flex rounded-md bg-[#0A0A0A] p-0.5 border border-matte-border text-[11px] font-mono">
+            <button type="button" data-unit="cm" class="unit-btn px-2 py-0.5 rounded-sm bg-white text-black font-bold transition">cm</button>
+            <button type="button" data-unit="mm" class="unit-btn px-2 py-0.5 rounded-sm text-matte-sub hover:text-white transition">mm</button>
+            <button type="button" data-unit="in" class="unit-btn px-2 py-0.5 rounded-sm text-matte-sub hover:text-white transition">in</button>
+          </div>
+        </div>
+
+        <!-- Width & Height Inputs with +/- Stepper Buttons -->
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label for="tagWidthInput" class="block text-[11px] font-mono uppercase text-matte-sub mb-1">
+              Width (<span class="unit-label">cm</span>)
+            </label>
+            <div class="flex items-center h-[34px] rounded-md border border-matte-border bg-matte-card overflow-hidden focus-within:border-white">
+              <button type="button" data-step-target="tagWidthInput" data-step-dir="-1" class="stepper-btn border-r border-matte-border" title="Decrease Width">−</button>
+              <input id="tagWidthInput" type="number" step="0.1" min="0.1" max="500" value="4" class="w-full bg-transparent text-center text-sm font-mono font-bold text-white focus:outline-none px-1" />
+              <button type="button" data-step-target="tagWidthInput" data-step-dir="1" class="stepper-btn border-l border-matte-border" title="Increase Width">+</button>
+            </div>
+            <p id="tagWidthSubtext" class="text-[10px] font-mono text-matte-muted mt-1">= 40.0 mm</p>
+          </div>
+
+          <div>
+            <label for="tagHeightInput" class="block text-[11px] font-mono uppercase text-matte-sub mb-1">
+              Height (<span class="unit-label">cm</span>)
+            </label>
+            <div class="flex items-center h-[34px] rounded-md border border-matte-border bg-matte-card overflow-hidden focus-within:border-white">
+              <button type="button" data-step-target="tagHeightInput" data-step-dir="-1" class="stepper-btn border-r border-matte-border" title="Decrease Height">−</button>
+              <input id="tagHeightInput" type="number" step="0.1" min="0.1" max="500" value="2" class="w-full bg-transparent text-center text-sm font-mono font-bold text-white focus:outline-none px-1" />
+              <button type="button" data-step-target="tagHeightInput" data-step-dir="1" class="stepper-btn border-l border-matte-border" title="Increase Height">+</button>
+            </div>
+            <p id="tagHeightSubtext" class="text-[10px] font-mono text-matte-muted mt-1">= 20.0 mm</p>
+          </div>
+        </div>
+
+        <!-- Aspect Ratio Controls: Lock Ratio + Match Uploaded Image Ratio -->
+        <div class="mt-2.5 flex items-center justify-between gap-2 pt-2 border-t border-matte-border/60">
+          <label class="inline-flex items-center gap-2 text-xs font-mono text-matte-sub cursor-pointer select-none">
+            <input id="lockAspectCheckbox" type="checkbox" class="matte-checkbox" />
+            <span>Lock W:H Ratio</span>
+          </label>
+
+          <button id="matchImageRatioBtn" type="button" class="px-2.5 py-1 rounded-sm border border-matte-border bg-matte-card hover:bg-matte-hover hover:border-white text-[11px] font-mono text-white flex items-center gap-1.5 transition" title="Auto-adjust Tag Height to match uploaded image proportions">
+            <i class="fa-solid fa-crop-simple text-[10px]"></i>
+            <span>Match Photo Ratio</span>
           </button>
+        </div>
 
-          <!-- Center Glowing Pearl Orb: Download High-Quality PDF -->
-          <button class="orb-btn center-pearl" id="exportPdfOrbBtn" title="Download High-Quality Print-Ready PDF">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-              <path d="M12 4v12m0 0l-4-4m4 4l4-4M5 20h14"/>
-            </svg>
-            <span id="exportOrbText">PDF</span>
+        <!-- Quick Size Presets -->
+        <div class="mt-2.5 flex flex-wrap items-center gap-1.5">
+          <span class="text-[10px] font-mono uppercase text-matte-muted mr-1">Presets:</span>
+          <button type="button" data-w-mm="40" data-h-mm="20" data-gx="10" data-gy="10" class="preset-tag-btn text-[11px] font-mono px-2 py-0.5 rounded-sm bg-white text-black font-semibold border border-white transition">4×2cm (10mm)</button>
+          <button type="button" data-w-mm="50" data-h-mm="25" data-gx="5" data-gy="5" class="preset-tag-btn text-[11px] font-mono px-2 py-0.5 rounded-sm bg-matte-card text-matte-sub hover:text-white border border-matte-border transition">5×2.5cm</button>
+          <button type="button" data-w-mm="60" data-h-mm="40" data-gx="5" data-gy="5" class="preset-tag-btn text-[11px] font-mono px-2 py-0.5 rounded-sm bg-matte-card text-matte-sub hover:text-white border border-matte-border transition">6×4cm</button>
+          <button type="button" data-w-mm="85" data-h-mm="55" data-gx="4" data-gy="4" class="preset-tag-btn text-[11px] font-mono px-2 py-0.5 rounded-sm bg-matte-card text-matte-sub hover:text-white border border-matte-border transition">8.5×5.5cm</button>
+        </div>
+
+        <!-- X and Y Coordinate Gaps (mm) with +/- Stepper Buttons -->
+        <div class="mt-3.5 pt-3 border-t border-matte-border">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[11px] font-mono font-bold uppercase text-white">X / Y Coordinate Gap (mm)</span>
+            <label class="inline-flex items-center gap-2 text-[11px] font-mono text-matte-sub cursor-pointer select-none">
+              <input id="lockGapsCheckbox" type="checkbox" checked class="matte-checkbox" />
+              <span>Sync X &amp; Y</span>
+            </label>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label for="gapXInput" class="block text-[11px] font-mono text-matte-sub mb-1">Horizontal X Gap (mm)</label>
+              <div class="flex items-center h-[34px] rounded-md border border-matte-border bg-matte-card overflow-hidden focus-within:border-white">
+                <button type="button" data-step-target="gapXInput" data-step-dir="-1" class="stepper-btn border-r border-matte-border" title="Decrease X Gap">−</button>
+                <input id="gapXInput" type="number" step="0.5" min="0" max="100" value="10" class="w-full bg-transparent text-center text-sm font-mono font-bold text-white focus:outline-none px-1" />
+                <button type="button" data-step-target="gapXInput" data-step-dir="1" class="stepper-btn border-l border-matte-border" title="Increase X Gap">+</button>
+              </div>
+              <p id="gapXSubtext" class="text-[10px] font-mono text-matte-muted mt-1">= 1.00 cm</p>
+            </div>
+
+            <div>
+              <label for="gapYInput" class="block text-[11px] font-mono text-matte-sub mb-1">Vertical Y Gap (mm)</label>
+              <div class="flex items-center h-[34px] rounded-md border border-matte-border bg-matte-card overflow-hidden focus-within:border-white">
+                <button type="button" data-step-target="gapYInput" data-step-dir="-1" class="stepper-btn border-r border-matte-border" title="Decrease Y Gap">−</button>
+                <input id="gapYInput" type="number" step="0.5" min="0" max="100" value="10" class="w-full bg-transparent text-center text-sm font-mono font-bold text-white focus:outline-none px-1" />
+                <button type="button" data-step-target="gapYInput" data-step-dir="1" class="stepper-btn border-l border-matte-border" title="Increase Y Gap">+</button>
+              </div>
+              <p id="gapYSubtext" class="text-[10px] font-mono text-matte-muted mt-1">= 1.00 cm</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 03: SHEET FORMAT, MARGINS & TRIM MARKS -->
+      <section class="bg-matte-panel rounded-lg border border-matte-border p-4">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center gap-2 mb-3 pb-2.5 border-b border-matte-border">
+          <span class="w-5 h-5 rounded-sm bg-white text-black flex items-center justify-center text-[11px] font-bold">03</span>
+          Sheet Geometry &amp; Trim Marks
+        </h2>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label for="pageSizeSelect" class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Paper Preset</label>
+            <select id="pageSizeSelect" class="w-full rounded-md border border-matte-border bg-matte-card px-2.5 py-1.5 text-xs font-mono text-white focus:outline-none focus:border-white">
+              <option value="A4" selected>A4 (210 × 297 mm)</option>
+              <option value="LETTER">Letter (215.9 × 279.4 mm)</option>
+              <option value="A3">A3 (297 × 420 mm)</option>
+              <option value="PHOTO4X6">4×6" (101.6 × 152.4 mm)</option>
+              <option value="LEGAL">Legal (215.9 × 355.6 mm)</option>
+              <option value="A5">A5 (148 × 210 mm)</option>
+              <option value="CUSTOM">Custom Page Size</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Orientation</label>
+            <div class="grid grid-cols-2 border border-matte-border rounded-md overflow-hidden bg-matte-card h-[32px]">
+              <button type="button" id="orientPortraitBtn" class="text-xs font-mono font-bold bg-white text-black transition">Portrait</button>
+              <button type="button" id="orientLandscapeBtn" class="text-xs font-mono text-matte-sub hover:text-white transition border-l border-matte-border">Landscape</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Page Width/Height Row -->
+        <div id="customPageSizeRow" class="hidden grid-cols-2 gap-3 mt-3 pt-3 border-t border-matte-border">
+          <div>
+            <label for="customPageWidth" class="block text-[11px] font-mono text-matte-sub mb-1">Sheet Width (mm)</label>
+            <input id="customPageWidth" type="number" step="1" min="40" max="1200" value="210" class="w-full rounded-md border border-matte-border bg-matte-card px-3 py-1.5 text-xs font-mono font-bold text-white focus:outline-none focus:border-white" />
+          </div>
+          <div>
+            <label for="customPageHeight" class="block text-[11px] font-mono text-matte-sub mb-1">Sheet Height (mm)</label>
+            <input id="customPageHeight" type="number" step="1" min="40" max="1200" value="297" class="w-full rounded-md border border-matte-border bg-matte-card px-3 py-1.5 text-xs font-mono font-bold text-white focus:outline-none focus:border-white" />
+          </div>
+        </div>
+
+        <!-- Margin with +/- Steppers & Grid Alignment -->
+        <div class="grid grid-cols-2 gap-3 mt-3 pt-3 border-t border-matte-border items-end">
+          <div>
+            <label for="marginInput" class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Page Margin (mm)</label>
+            <div class="flex items-center h-[32px] rounded-md border border-matte-border bg-matte-card overflow-hidden focus-within:border-white">
+              <button type="button" data-step-target="marginInput" data-step-dir="-1" class="stepper-btn border-r border-matte-border" title="Decrease Margin">−</button>
+              <input id="marginInput" type="number" step="0.5" min="0" max="60" value="5" class="w-full bg-transparent text-center text-xs font-mono font-bold text-white focus:outline-none px-1" />
+              <button type="button" data-step-target="marginInput" data-step-dir="1" class="stepper-btn border-l border-matte-border" title="Increase Margin">+</button>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Grid Alignment</label>
+            <div class="grid grid-cols-2 border border-matte-border rounded-md overflow-hidden bg-matte-card h-[32px]">
+              <button type="button" id="alignCenterBtn" class="text-[11px] font-mono font-bold bg-white text-black transition">Centered</button>
+              <button type="button" id="alignTopLeftBtn" class="text-[11px] font-mono text-matte-sub hover:text-white transition border-l border-matte-border">Top-Left</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cut Guides & Print DPI -->
+        <div class="grid grid-cols-2 gap-3 mt-3 pt-3 border-t border-matte-border">
+          <div>
+            <label for="cutMarksSelect" class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Cut / Trim Marks</label>
+            <select id="cutMarksSelect" class="w-full rounded-md border border-matte-border bg-matte-card px-2.5 py-1.5 text-xs font-mono text-white focus:outline-none focus:border-white">
+              <option value="cropAndBorder" selected>Crop Ticks + Border</option>
+              <option value="crop">Corner Crop Ticks Only</option>
+              <option value="dashed">Dashed Cut Line</option>
+              <option value="solid">Solid Hairline Box</option>
+              <option value="punch">Box + Punch Hole</option>
+              <option value="none">None (Clean Gaps)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="dpiSelect" class="block text-[11px] font-mono uppercase text-matte-sub mb-1">PDF Resolution</label>
+            <select id="dpiSelect" class="w-full rounded-md border border-matte-border bg-matte-card px-2.5 py-1.5 text-xs font-mono text-white focus:outline-none focus:border-white">
+              <option value="300" selected>300 DPI (Print Pro)</option>
+              <option value="600">600 DPI (Ultra Sharp)</option>
+              <option value="150">150 DPI (Draft Proof)</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 04: MATTE TELEMETRY READOUT -->
+      <section class="bg-matte-panel rounded-lg border border-matte-border p-4">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-[11px] font-mono font-bold uppercase tracking-wider text-matte-sub">Sheet Telemetry</h3>
+          <span id="fitStatusBadge" class="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded-sm bg-white text-black">40 TAGS READY</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2 text-center font-mono">
+          <div class="bg-matte-card rounded-md p-2.5 border border-matte-border">
+            <div class="text-[10px] text-matte-muted uppercase">Columns (X)</div>
+            <div id="statCols" class="text-lg font-bold text-white mt-0.5">4</div>
+          </div>
+          <div class="bg-matte-card rounded-md p-2.5 border border-matte-border">
+            <div class="text-[10px] text-matte-muted uppercase">Rows (Y)</div>
+            <div id="statRows" class="text-lg font-bold text-white mt-0.5">10</div>
+          </div>
+          <div class="bg-white text-black rounded-md p-2.5 border border-white">
+            <div class="text-[10px] font-bold uppercase opacity-70">Total Yield</div>
+            <div id="statTotal" class="text-lg font-bold mt-0.5">40</div>
+          </div>
+        </div>
+
+        <div class="mt-3 pt-3 border-t border-matte-border text-[11px] font-mono text-matte-sub space-y-1.5">
+          <div class="flex justify-between">
+            <span class="text-matte-muted">ACTIVE GRID SPAN:</span>
+            <span id="statGridArea" class="text-white font-semibold">190.0 × 290.0 mm</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-matte-muted">MARGINS (L/R • T/B):</span>
+            <span id="statMargins" class="text-white font-semibold">10.0 mm • 3.5 mm</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-matte-muted">TAG RASTER @ DPI:</span>
+            <span id="statTagPixels" class="text-white font-semibold">472 × 236 px (300 DPI)</span>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- Right Interactive Drafting Preview & Inspector (8 Columns on Desktop) -->
+    <section class="lg:col-span-8 xl:col-span-8 flex flex-col bg-matte-panel rounded-lg border border-matte-border overflow-hidden min-h-[660px]">
+
+      <!-- Top Preview Control Bar -->
+      <div class="px-4 py-2.5 border-b border-matte-border bg-[#141414] flex flex-wrap items-center justify-between gap-3">
+        <!-- Overlay Toggles -->
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-white mr-1 flex items-center gap-1.5">
+            <i class="fa-solid fa-crosshairs text-matte-sub"></i> Overlays:
+          </span>
+
+          <label class="inline-flex items-center gap-1.5 text-[11px] font-mono text-matte-sub hover:text-white cursor-pointer select-none bg-matte-card px-2.5 py-1 rounded-sm border border-matte-border">
+            <input id="showMeasurementsCheckbox" type="checkbox" checked class="matte-checkbox" />
+            <span>Gap &amp; Size Callouts</span>
+          </label>
+
+          <label class="inline-flex items-center gap-1.5 text-[11px] font-mono text-matte-sub hover:text-white cursor-pointer select-none bg-matte-card px-2.5 py-1 rounded-sm border border-matte-border">
+            <input id="showRulersCheckbox" type="checkbox" checked class="matte-checkbox" />
+            <span>mm Rulers</span>
+          </label>
+
+          <label class="inline-flex items-center gap-1.5 text-[11px] font-mono text-matte-sub hover:text-white cursor-pointer select-none bg-matte-card px-2.5 py-1 rounded-sm border border-matte-border">
+            <input id="showMarginGuideCheckbox" type="checkbox" checked class="matte-checkbox" />
+            <span>Margin Safe Zone</span>
+          </label>
+        </div>
+
+        <!-- Interactive Zoom Slider & Reset -->
+        <div class="flex items-center gap-2 bg-matte-card px-2.5 py-1 rounded-sm border border-matte-border">
+          <button id="zoomOutBtn" type="button" class="w-6 h-6 rounded-sm hover:bg-matte-hover text-matte-sub hover:text-white flex items-center justify-center text-xs transition" title="Zoom Out">
+            <i class="fa-solid fa-minus"></i>
           </button>
-
-          <!-- Right Orb: Built-in Price Tag Maker -->
-          <button class="orb-btn" id="tagStudioOrbBtn" title="Customize Built-In Barcode Price Tag">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/>
-              <circle cx="7" cy="7" r="1.5"/>
-            </svg>
-            <span>Studio</span>
+          <input id="zoomRangeSlider" type="range" min="40" max="250" step="5" value="100" class="matte-slider w-20 sm:w-24" />
+          <span id="zoomLevelText" class="text-[11px] font-mono font-bold text-white min-w-[42px] text-center">100%</span>
+          <button id="zoomInBtn" type="button" class="w-6 h-6 rounded-sm hover:bg-matte-hover text-matte-sub hover:text-white flex items-center justify-center text-xs transition" title="Zoom In">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button id="zoomFitBtn" type="button" class="text-[10px] font-mono uppercase font-semibold px-2 py-0.5 rounded-sm bg-[#0A0A0A] hover:bg-white hover:text-black text-matte-sub border border-matte-border transition ml-1">
+            Reset
           </button>
         </div>
+      </div>
+
+      <!-- Sub-Bar: Live Coordinate Inspector HUD -->
+      <div class="px-4 py-2 border-b border-matte-border bg-[#0A0A0A] flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono">
+        <div class="flex items-center gap-3">
+          <span class="px-1.5 py-0.5 bg-white text-black font-bold rounded-sm text-[10px] uppercase">Inspector HUD</span>
+          <span id="hudTagIndex" class="text-white font-semibold">Hover any tag on sheet</span>
+          <span class="text-matte-border">|</span>
+          <span id="hudGridPos" class="text-matte-sub">ROW — • COL —</span>
+          <span class="text-matte-border">|</span>
+          <span id="hudCoordsMm" class="text-matte-sub">X: — mm , Y: — mm</span>
+        </div>
+        <div class="text-matte-muted hidden sm:block">
+          <span>Drag canvas to pan • <strong class="text-matte-sub">Ctrl + Scroll</strong> to zoom</span>
+        </div>
+      </div>
+
+      <!-- Interactive Canvas Viewport (Supports Click-and-Drag Panning) -->
+      <div id="previewViewport" class="flex-1 matte-drafting-grid overflow-auto flex items-center justify-center p-6 sm:p-10 relative cursor-grab active:cursor-grabbing select-none">
+        <div id="canvasContainer" class="relative origin-center">
+          <canvas id="sheetCanvas" class="sheet-matte-elevation bg-white block"></canvas>
+        </div>
+      </div>
+
+      <!-- Bottom Status Footer -->
+      <div class="px-4 py-2.5 bg-matte-panel border-t border-matte-border flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-matte-sub">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-white inline-block"></span>
+          <span>PRINTING NOTE: Select <strong class="text-white">"Actual Size" (100% Scale)</strong> in your PDF print dialog for exact 4cm × 2cm physical output.</span>
+        </div>
+        <div id="statusMessage" class="text-white font-semibold uppercase">SYSTEM READY</div>
       </div>
     </section>
 
-    <!-- RIGHT COLUMN: LIVE HIGH-PRECISION SHEET PREVIEW -->
-    <section class="stage-panel">
-      <div class="stage-toolbar">
-        <div class="toolbar-group">
-          <button class="stage-pill" id="resetDefaultBtn" title="Reset to 4cm × 2cm with 10mm X/Y gap">
-            4×2cm · 10mm Default
-          </button>
-          <button class="stage-pill" id="matchRatioBtn" title="Match Tag Height to Uploaded Photo Aspect Ratio">
-            Match Photo Ratio
-          </button>
-          <button class="stage-pill" id="rotateImgBtn" title="Rotate Tag Image 90°">
-            Rotate 90°
-          </button>
-        </div>
-        <div class="toolbar-group">
-          <button class="stage-pill" id="zoomOutBtn">−</button>
-          <span style="font-size:12px; min-width:46px; text-align:center;" id="zoomLabel">100%</span>
-          <button class="stage-pill" id="zoomInBtn">+</button>
-          <button class="stage-pill" id="zoomFitBtn">Fit</button>
-        </div>
-      </div>
-
-      <div class="viewport-canvas-area" id="viewportArea">
-        <canvas id="sheetCanvas"></canvas>
-
-        <div class="inspector-hud">
-          <div>
-            Grid: <strong id="hudGrid">4 cols × 10 rows (40 tags)</strong>
-          </div>
-          <div>
-            Hover Tag: <strong id="hudHover">Move cursor over sheet to inspect X/Y mm</strong>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- MODAL 1: BUILT-IN BARCODE PRICE TAG DESIGNER -->
-  <div class="modal-backdrop" id="studioModal">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3>Price Tag Studio</h3>
-        <button class="close-btn" id="closeStudioModal">✕</button>
+  <!-- Built-In Monochrome Retail Price Tag Maker Modal -->
+  <div id="tagMakerModal" class="fixed inset-0 z-50 bg-black/85 hidden items-center justify-center p-4">
+    <div class="bg-matte-panel rounded-lg border border-white max-w-lg w-full overflow-hidden">
+      <div class="px-5 py-3.5 border-b border-matte-border flex items-center justify-between bg-[#0A0A0A]">
+        <div class="flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-sm bg-white text-black flex items-center justify-center text-xs font-bold">
+            <i class="fa-solid fa-tag"></i>
+          </span>
+          <h3 class="font-mono font-bold text-white text-xs uppercase tracking-wider">Monochrome Retail Price Tag Maker</h3>
+        </div>
+        <button id="closeDesignerBtn" type="button" class="w-7 h-7 rounded-sm bg-matte-card hover:bg-white hover:text-black text-matte-sub flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
-      <div class="form-grid">
-        <div class="form-field">
-          <label>Shop / Brand Header</label>
-          <input type="text" id="tagBrandInput" value="M.S. TOYS & GIFTS" />
+
+      <div class="p-5 space-y-4">
+        <p class="text-xs font-mono text-matte-sub">Generate a razor-sharp 600 DPI monochrome vector price tag directly sized to your sheet.</p>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Store / Brand Name</label>
+            <input id="designBrand" type="text" value="ATELIER MONO" class="w-full rounded-md border border-matte-border bg-matte-card px-3 py-2 text-xs font-mono font-bold text-white focus:outline-none focus:border-white" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Item / Product Title</label>
+            <input id="designItem" type="text" value="HEAVYWEIGHT TEE • BLK" class="w-full rounded-md border border-matte-border bg-matte-card px-3 py-2 text-xs font-mono text-white focus:outline-none focus:border-white" />
+          </div>
         </div>
-        <div class="form-field">
-          <label>Product Title</label>
-          <input type="text" id="tagTitleInput" value="PREMIUM EDITION" />
+
+        <div class="grid grid-cols-3 gap-3">
+          <div>
+            <label class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Price (₹ / $)</label>
+            <input id="designPrice" type="text" value="₹1,499" class="w-full rounded-md border border-matte-border bg-matte-card px-3 py-2 text-sm font-mono font-bold text-white focus:outline-none focus:border-white" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-mono uppercase text-matte-sub mb-1">SKU / Barcode</label>
+            <input id="designSku" type="text" value="890421098" class="w-full rounded-md border border-matte-border bg-matte-card px-3 py-2 text-xs font-mono text-white focus:outline-none focus:border-white" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-mono uppercase text-matte-sub mb-1">Monochrome Style</label>
+            <select id="designTheme" class="w-full rounded-md border border-matte-border bg-matte-card px-2.5 py-2 text-xs font-mono text-white focus:outline-none focus:border-white">
+              <option value="stark" selected>Stark Black Stub</option>
+              <option value="minimal">Minimalist Clean</option>
+              <option value="inverted">High-Contrast Carbon</option>
+              <option value="editorial">Architectural Grid</option>
+            </select>
+          </div>
         </div>
-        <div class="form-field">
-          <label>Price (MRP)</label>
-          <input type="text" id="tagPriceInput" value="₹ 499.00" />
+
+        <div class="flex items-center justify-between pt-1">
+          <label class="inline-flex items-center gap-2 text-xs font-mono text-matte-sub cursor-pointer select-none">
+            <input id="designBorderCheckbox" type="checkbox" checked class="matte-checkbox" />
+            <span>Include Inner Framing Border</span>
+          </label>
+          <span class="text-[11px] font-mono text-matte-muted">Output: 800 × 400 px</span>
         </div>
-        <div class="form-field">
-          <label>SKU / Barcode Code</label>
-          <input type="text" id="tagSkuInput" value="MST-4020-10" />
+
+        <!-- Live Tag Preview Box -->
+        <div class="bg-[#0A0A0A] rounded-md p-4 flex flex-col items-center justify-center border border-matte-border">
+          <span class="text-[10px] font-mono uppercase text-matte-muted mb-2">Live 600 DPI Tag Preview (4cm × 2cm)</span>
+          <canvas id="designerPreviewCanvas" width="800" height="400" class="w-72 h-36 bg-white border border-[#3D3D3D]"></canvas>
         </div>
       </div>
-      <button class="primary-modal-btn" id="applyStudioTagBtn">Apply Custom Tag to Sheet</button>
+
+      <div class="px-5 py-3.5 bg-[#0A0A0A] border-t border-matte-border flex items-center justify-end gap-2.5">
+        <button id="cancelDesignerBtn" type="button" class="px-4 py-2 rounded-md border border-matte-border bg-matte-card text-matte-sub hover:text-white text-xs font-mono uppercase">
+          Cancel
+        </button>
+        <button id="applyDesignerBtn" type="button" class="px-4 py-2 rounded-md bg-white hover:bg-[#E5E5E5] text-black text-xs font-mono font-bold uppercase">
+          Apply Tag to Sheet
+        </button>
+      </div>
     </div>
   </div>
 
-  <!-- MODAL 2: INSTALL APP INSTRUCTIONS & ONE-CLICK PWA -->
-  <div class="modal-backdrop" id="installModal">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3>Install TagGrid Studio</h3>
-        <button class="close-btn" id="closeInstallModal">✕</button>
-      </div>
-      <div class="step-list">
-        <div class="step-box">
-          <strong>1. Offline Standalone App (Immediate)</strong><br/>
-          Keep this <code>TagGrid-Studio.html</code> file on your phone or PC. Double-click or tap it anytime to open and generate 300/600 DPI price tag PDFs offline.
-        </div>
-        <div class="step-box">
-          <strong>2. Install on Android / iOS Home Screen</strong><br/>
-          Open this file in Chrome (Android) or Safari (iOS), tap the browser menu (<strong>⋮</strong> or <strong>Share</strong>), and tap <strong>"Add to Home Screen"</strong>.
-        </div>
-        <div class="step-box">
-          <strong>3. Install as Desktop App (Chrome / Edge)</strong><br/>
-          Extract <code>TagGrid-Studio-PWA.zip</code> and host or open via local server (or Netlify Drop) and click the <strong>Install App</strong> icon in the address bar.
-        </div>
-      </div>
-      <button class="primary-modal-btn" id="gotItInstallBtn">Got It</button>
+  <!-- Matte Monochrome Toast Notification -->
+  <div id="toastBanner" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-200 pointer-events-none">
+    <div class="bg-[#121212] text-white px-4 py-3 rounded-md border border-white flex items-center gap-3 text-xs font-mono shadow-lg">
+      <span id="toastBadge" class="px-1.5 py-0.5 rounded-sm bg-white text-black font-bold text-[10px] uppercase">OK</span>
+      <span id="toastText">PDF generated successfully</span>
     </div>
   </div>
 
+  <!-- Application Script -->
   <script>
-    // --- APPLICATION STATE ---
-    const state = {
-      unit: 'cm',          // 'cm' | 'mm' | 'in'
-      tagW: 40,            // 40 mm = 4 cm default
-      tagH: 20,            // 20 mm = 2 cm default
-      gapX: 10,            // 10 mm X coordinate gap default
-      gapY: 10,            // 10 mm Y coordinate gap default
-      margin: 5,           // 5 mm page margin so 4 cols x 10 rows fits A4
-      pageW: 210,          // A4 width mm
-      pageH: 297,          // A4 height mm
-      paperName: 'A4',
-      fitMode: 'stretch',  // 'stretch' | 'contain' | 'cover'
-      rotation: 0,         // 0, 90, 180, 270
-      dpi: 300,            // 300 or 600 DPI
-      cropMarks: true,
-      zoom: 1.0,
-      panX: 0,
-      panY: 0,
-      uploadedImg: null,
-      tagBrand: 'M.S. TOYS & GIFTS',
-      tagTitle: 'PREMIUM EDITION',
-      tagPrice: '₹ 499.00',
-      tagSku: 'MST-4020-10',
-      hoveredCell: null,
-      tagRects: []
+    /*************************************************************************
+     * TagGrid Studio — Matte Monochrome Engine & Physical Coordinate System
+     *************************************************************************/
+    const PAPER_PRESETS_MM = {
+      A4: { width: 210, height: 297, label: 'A4' },
+      A3: { width: 297, height: 420, label: 'A3' },
+      LETTER: { width: 215.9, height: 279.4, label: 'Letter' },
+      PHOTO4X6: { width: 101.6, height: 152.4, label: '4×6"' },
+      LEGAL: { width: 215.9, height: 355.6, label: 'Legal' },
+      A5: { width: 148, height: 210, label: 'A5' },
+      CUSTOM: { width: 210, height: 297, label: 'Custom' }
     };
 
-    const PAPER_PRESETS = [
-      { name: 'A4', w: 210, h: 297 },
-      { name: 'Letter', w: 215.9, h: 279.4 },
-      { name: 'A3', w: 297, h: 420 }
-    ];
-    let paperIndex = 0;
+    const state = {
+      // Canonical dimensions in millimeters (mm)
+      unit: 'cm',              // 'cm' | 'mm' | 'in'
+      tagWidthMm: 40,          // Default: 4cm = 40mm
+      tagHeightMm: 20,         // Default: 2cm = 20mm
+      lockAspectRatio: false,
+      aspectRatioWH: 2.0,      // Width / Height ratio
+      gapXMm: 10,              // Default: 10mm horizontal gap
+      gapYMm: 10,              // Default: 10mm vertical gap
+      lockGaps: true,
+      paperFormat: 'A4',
+      orientation: 'portrait', // 'portrait' | 'landscape'
+      customPageWidthMm: 210,
+      customPageHeightMm: 297,
+      minMarginMm: 5.0,        // Default 5mm margin (fits 4 cols × 10 rows = 40 tags on A4)
+      centerGrid: true,        // true = Centered, false = Top-Left
+      fitMode: 'fill',         // 'fill' (Stretch) | 'contain' | 'cover'
+      bgFillColor: '#ffffff',
+      rotationDeg: 0,          // 0 | 90 | 180 | 270
+      cutMarks: 'cropAndBorder',
+      exportDpi: 300,
+      showMeasurements: true,
+      showRulers: true,
+      showMarginGuide: true,
+      zoomFactor: 1.0,
+      hoveredTagIndex: -1,     // Index of currently hovered tag on canvas
+      imageElement: null,
+      imageName: 'Default_Price_Tag.png',
+      isSampleImage: true,
+      glassMode: false
+    };
 
-    // --- GENERATE DEFAULT HIGH-RES PRICE TAG IMAGE ---
-    function createDefaultTagImage() {
-      const c = document.createElement('canvas');
-      c.width = 800;
-      c.height = 400;
-      const ctx = c.getContext('2d');
+    // Cached layout & geometry metrics for mouse hit-testing
+    let currentLayout = null;
+    let currentRenderMetrics = { basePxPerMm: 3.2, rulerOffsetPx: 26 };
 
-      // Crisp ivory/white tag card
-      ctx.fillStyle = '#ffffff';
-      ctx.fillRect(0, 0, c.width, c.height);
+    // DOM References
+    const globalDropOverlay = document.getElementById('globalDropOverlay');
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const thumbPreview = document.getElementById('thumbPreview');
+    const fileNameDisplay = document.getElementById('fileNameDisplay');
+    const imageResolutionBadge = document.getElementById('imageResolutionBadge');
+    const resetSampleBtn = document.getElementById('resetSampleBtn');
 
-      // Outer border frame
-      ctx.strokeStyle = '#111111';
-      ctx.lineWidth = 8;
-      ctx.strokeRect(18, 18, c.width - 36, c.height - 36);
+    const fitModeSelect = document.getElementById('fitModeSelect');
+    const bgFillColorInput = document.getElementById('bgFillColorInput');
+    const bgFillHexText = document.getElementById('bgFillHexText');
+    const rotBtns = document.querySelectorAll('.rot-btn');
 
-      // Punch hole on left
-      ctx.beginPath();
-      ctx.arc(68, c.height / 2, 18, 0, Math.PI * 2);
-      ctx.fillStyle = '#f3f4f6';
-      ctx.fill();
-      ctx.lineWidth = 5;
-      ctx.strokeStyle = '#111111';
-      ctx.stroke();
+    const unitBtns = document.querySelectorAll('.unit-btn');
+    const unitLabels = document.querySelectorAll('.unit-label');
 
-      // Brand header
-      ctx.fillStyle = '#111111';
-      ctx.font = '700 32px -apple-system, BlinkMacSystemFont, "Inter", sans-serif';
-      ctx.fillText(state.tagBrand, 115, 78);
+    const tagWidthInput = document.getElementById('tagWidthInput');
+    const tagHeightInput = document.getElementById('tagHeightInput');
+    const tagWidthSubtext = document.getElementById('tagWidthSubtext');
+    const tagHeightSubtext = document.getElementById('tagHeightSubtext');
+    const lockAspectCheckbox = document.getElementById('lockAspectCheckbox');
+    const matchImageRatioBtn = document.getElementById('matchImageRatioBtn');
 
-      // Subtitle
-      ctx.fillStyle = '#4b5563';
-      ctx.font = '600 22px -apple-system, BlinkMacSystemFont, "Inter", sans-serif';
-      ctx.fillText(state.tagTitle + '  •  4cm × 2cm', 115, 114);
+    const gapXInput = document.getElementById('gapXInput');
+    const gapYInput = document.getElementById('gapYInput');
+    const gapXSubtext = document.getElementById('gapXSubtext');
+    const gapYSubtext = document.getElementById('gapYSubtext');
+    const lockGapsCheckbox = document.getElementById('lockGapsCheckbox');
 
-      // Divider
-      ctx.beginPath();
-      ctx.moveTo(115, 134);
-      ctx.lineTo(c.width - 42, 134);
-      ctx.strokeStyle = '#d1d5db';
-      ctx.lineWidth = 3;
-      ctx.stroke();
+    const pageSizeSelect = document.getElementById('pageSizeSelect');
+    const orientPortraitBtn = document.getElementById('orientPortraitBtn');
+    const orientLandscapeBtn = document.getElementById('orientLandscapeBtn');
+    const customPageSizeRow = document.getElementById('customPageSizeRow');
+    const customPageWidth = document.getElementById('customPageWidth');
+    const customPageHeight = document.getElementById('customPageHeight');
 
-      // Price (MRP)
-      ctx.fillStyle = '#090a0c';
-      ctx.font = '800 74px -apple-system, BlinkMacSystemFont, "Inter", sans-serif';
-      ctx.fillText(state.tagPrice, 115, 220);
+    const marginInput = document.getElementById('marginInput');
+    const alignCenterBtn = document.getElementById('alignCenterBtn');
+    const alignTopLeftBtn = document.getElementById('alignTopLeftBtn');
+    const cutMarksSelect = document.getElementById('cutMarksSelect');
+    const dpiSelect = document.getElementById('dpiSelect');
 
-      // Simulated High-Contrast Barcode
-      const startX = 115;
-      const barY = 248;
-      const barH = 82;
-      let curX = startX;
-      const seedStr = state.tagSku || 'MST-4020-10';
-      for (let i = 0; i < 48; i++) {
-        const code = seedStr.charCodeAt(i % seedStr.length) + i * 17;
-        const w = (code % 3 === 0) ? 8 : (code % 2 === 0 ? 4 : 2);
-        const gap = (code % 4 === 0) ? 6 : 3;
-        if (curX + w < c.width - 48) {
-          ctx.fillStyle = '#000000';
-          ctx.fillRect(curX, barY, w, barH);
-        }
-        curX += w + gap;
-      }
+    const showMeasurementsCheckbox = document.getElementById('showMeasurementsCheckbox');
+    const showRulersCheckbox = document.getElementById('showRulersCheckbox');
+    const showMarginGuideCheckbox = document.getElementById('showMarginGuideCheckbox');
 
-      // SKU Text below barcode
-      ctx.fillStyle = '#374151';
-      ctx.font = '600 20px monospace';
-      ctx.fillText('SKU: ' + state.tagSku, 115, 356);
+    const sheetCanvas = document.getElementById('sheetCanvas');
+    const previewViewport = document.getElementById('previewViewport');
+    const zoomOutBtn = document.getElementById('zoomOutBtn');
+    const zoomInBtn = document.getElementById('zoomInBtn');
+    const zoomFitBtn = document.getElementById('zoomFitBtn');
+    const zoomRangeSlider = document.getElementById('zoomRangeSlider');
+    const zoomLevelText = document.getElementById('zoomLevelText');
 
-      const img = new Image();
-      img.onload = () => {
-        state.uploadedImg = img;
-        renderSheetPreview();
-      };
-      img.src = c.toDataURL('image/png');
+    // Inspector HUD
+    const hudTagIndex = document.getElementById('hudTagIndex');
+    const hudGridPos = document.getElementById('hudGridPos');
+    const hudCoordsMm = document.getElementById('hudCoordsMm');
+
+    // Header & Telemetry
+    const headerTagSize = document.getElementById('headerTagSize');
+    const headerGapSize = document.getElementById('headerGapSize');
+    const headerSheetSize = document.getElementById('headerSheetSize');
+    const headerGridCount = document.getElementById('headerGridCount');
+    const statCols = document.getElementById('statCols');
+    const statRows = document.getElementById('statRows');
+    const statTotal = document.getElementById('statTotal');
+    const statGridArea = document.getElementById('statGridArea');
+    const statMargins = document.getElementById('statMargins');
+    const statTagPixels = document.getElementById('statTagPixels');
+    // Export & Theme Buttons
+    const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+    const downloadPngBtn = document.getElementById('downloadPngBtn');
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeToggleLabel = document.getElementById('themeToggleLabel');
+    const saveAppHtmlBtn = document.getElementById('saveAppHtmlBtn');
+
+    // Modal Designer Elements
+    const tagMakerModal = document.getElementById('tagMakerModal');
+    const openDesignerBtn = document.getElementById('openDesignerBtn');
+    const closeDesignerBtn = document.getElementById('closeDesignerBtn');
+    const cancelDesignerBtn = document.getElementById('cancelDesignerBtn');
+    const applyDesignerBtn = document.getElementById('applyDesignerBtn');
+    const designBrand = document.getElementById('designBrand');
+    const designItem = document.getElementById('designItem');
+    const designPrice = document.getElementById('designPrice');
+    const designSku = document.getElementById('designSku');
+    const designTheme = document.getElementById('designTheme');
+    const designBorderCheckbox = document.getElementById('designBorderCheckbox');
+    const designerPreviewCanvas = document.getElementById('designerPreviewCanvas');
+
+    /**
+     * Unit Conversion Helpers (canonical internal state is always mm)
+     */
+    function mmToDisplayUnit(mm, unit = state.unit) {
+      if (unit === 'cm') return +(mm / 10).toFixed(2);
+      if (unit === 'in') return +(mm / 25.4).toFixed(3);
+      return +mm.toFixed(1);
     }
 
-    // --- UNIT FORMATTING HELPERS ---
-    function formatDim(mmVal, forceUnit) {
-      const u = forceUnit || state.unit;
-      if (u === 'cm') {
-        const v = +(mmVal / 10).toFixed(2);
-        return `${v} cm`;
-      } else if (u === 'in') {
-        const v = +(mmVal / 25.4).toFixed(2);
-        return `${v} in`;
-      }
-      return `${+(mmVal.toFixed(1))} mm`;
+    function displayUnitToMm(val, unit = state.unit) {
+      if (unit === 'cm') return val * 10;
+      if (unit === 'in') return val * 25.4;
+      return val;
     }
 
-    function parseInputToMm(rawVal, unit) {
-      const num = parseFloat(rawVal);
-      if (isNaN(num) || num < 0) return null;
-      if (unit === 'cm') return num * 10;
-      if (unit === 'in') return num * 25.4;
-      return num;
+    /**
+     * Show Matte Monochrome Toast Notification
+     */
+    let toastTimeout = null;
+    function showToast(message, isError = false) {
+      const banner = document.getElementById('toastBanner');
+      const text = document.getElementById('toastText');
+      const badge = document.getElementById('toastBadge');
+
+      text.textContent = message;
+      badge.textContent = isError ? 'ERR' : 'OK';
+      badge.className = isError
+        ? 'px-1.5 py-0.5 rounded-sm bg-[#262626] text-white border border-white font-bold text-[10px] uppercase'
+        : 'px-1.5 py-0.5 rounded-sm bg-white text-black font-bold text-[10px] uppercase';
+
+      banner.classList.remove('translate-y-20', 'opacity-0');
+      banner.classList.add('translate-y-0', 'opacity-100');
+
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        banner.classList.add('translate-y-20', 'opacity-0');
+        banner.classList.remove('translate-y-0', 'opacity-100');
+      }, 3400);
     }
 
-    // --- CALCULATE GRID MATRIX ---
-    function computeGrid() {
-      const availW = Math.max(0, state.pageW - 2 * state.margin);
-      const availH = Math.max(0, state.pageH - 2 * state.margin);
-      const cols = Math.max(1, Math.floor((availW + state.gapX + 0.001) / (state.tagW + state.gapX)));
-      const rows = Math.max(1, Math.floor((availH + state.gapY + 0.001) / (state.tagH + state.gapY)));
+    /**
+     * Render a crisp 800×400 monochrome vector price tag onto a canvas
+     */
+    function renderBuiltInPriceTag(canvas, options = {}) {
+      const brand = options.brand ?? 'ATELIER MONO';
+      const item = options.item ?? 'HEAVYWEIGHT TEE • BLK';
+      const price = options.price ?? '₹1,499';
+      const sku = options.sku ?? '890421098';
+      const theme = options.theme ?? 'stark';
+      const showBorder = options.showBorder ?? true;
 
-      const gridW = cols * state.tagW + (cols - 1) * state.gapX;
-      const gridH = rows * state.tagH + (rows - 1) * state.gapY;
-      const startX = (state.pageW - gridW) / 2;
-      const startY = (state.pageH - gridH) / 2;
-
-      return { cols, rows, total: cols * rows, gridW, gridH, startX, startY };
-    }
-
-    // --- UPDATE STADIUM PILLS & TELEMETRY UI ---
-    function updateUIControls() {
-      const grid = computeGrid();
-
-      // Update stadium pill fills and labels
-      const configs = [
-        { key: 'tagW', min: 10, max: 100, unit: state.unit },
-        { key: 'tagH', min: 10, max: 100, unit: state.unit },
-        { key: 'gapX', min: 0, max: 30, unit: state.unit === 'in' ? 'in' : 'mm' },
-        { key: 'gapY', min: 0, max: 30, unit: state.unit === 'in' ? 'in' : 'mm' }
-      ];
-
-      configs.forEach(cfg => {
-        const val = state[cfg.key];
-        const pct = Math.min(100, Math.max(14, ((val - cfg.min) / (cfg.max - cfg.min)) * 84 + 14));
-        const fillEl = document.getElementById(`fill-${cfg.key}`);
-        const valEl = document.getElementById(`val-${cfg.key}`);
-        if (fillEl) fillEl.style.width = `${pct}%`;
-        if (valEl) valEl.textContent = formatDim(val, cfg.unit);
-      });
-
-      // Update right-edge vertical telemetry line
-      document.getElementById('railTop').textContent = `${grid.cols}:${grid.rows}`;
-      document.getElementById('railBottom').textContent = `${grid.total}:${state.dpi}`;
-
-      // Update subtitle summary
-      document.getElementById('liveSummaryText').textContent =
-        `${formatDim(state.tagW)} × ${formatDim(state.tagH)} · ${formatDim(state.gapX, 'mm')} X/Y · ${grid.total} tags`;
-
-      // Update HUD
-      document.getElementById('hudGrid').textContent =
-        `${grid.cols} cols × ${grid.rows} rows (${grid.total} tags on ${state.paperName})`;
-
-      // Update unit switcher buttons
-      document.querySelectorAll('.unit-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.unit === state.unit);
-      });
-    }
-
-    // --- DRAW IMAGE WITH FIT MODE & ROTATION ---
-    function drawTagImageOnContext(ctx, img, x, y, w, h, fitMode, rotationDeg) {
-      ctx.save();
-      ctx.beginPath();
-      ctx.rect(x, y, w, h);
-      ctx.clip();
-
-      const cx = x + w / 2;
-      const cy = y + h / 2;
-      ctx.translate(cx, cy);
-      ctx.rotate((rotationDeg * Math.PI) / 180);
-
-      const isRotated90 = (rotationDeg % 180 !== 0);
-      const targetW = isRotated90 ? h : w;
-      const targetH = isRotated90 ? w : h;
-
-      if (fitMode === 'stretch') {
-        ctx.drawImage(img, -targetW / 2, -targetH / 2, targetW, targetH);
-      } else {
-        const imgRatio = img.width / img.height;
-        const boxRatio = targetW / targetH;
-        let drawW = targetW;
-        let drawH = targetH;
-
-        if (fitMode === 'contain') {
-          if (imgRatio > boxRatio) {
-            drawH = targetW / imgRatio;
-          } else {
-            drawW = targetH * imgRatio;
-          }
-        } else if (fitMode === 'cover') {
-          if (imgRatio > boxRatio) {
-            drawW = targetH * imgRatio;
-          } else {
-            drawH = targetW / imgRatio;
-          }
-        }
-        ctx.drawImage(img, -drawW / 2, -drawH / 2, drawW, drawH);
-      }
-      ctx.restore();
-    }
-
-    // --- RENDER LIVE SHEET PREVIEW WITH MM RULERS ---
-    function renderSheetPreview() {
-      updateUIControls();
-      const canvas = document.getElementById('sheetCanvas');
+      canvas.width = 800;
+      canvas.height = 400;
       const ctx = canvas.getContext('2d');
 
-      const rulerMm = 8; // 8mm ruler border on top and left
-      const scale = 3.2; // High-DPI preview scale (px per mm)
-      const totalWmm = state.pageW + rulerMm;
-      const totalHmm = state.pageH + rulerMm;
+      const isInverted = theme === 'inverted';
+      const bg = isInverted ? '#0A0A0A' : '#FFFFFF';
+      const fg = isInverted ? '#FFFFFF' : '#0A0A0A';
+      const muted = isInverted ? '#A3A3A3' : '#525252';
+      const line = isInverted ? '#404040' : '#D4D4D4';
 
-      canvas.width = Math.round(totalWmm * scale);
-      canvas.height = Math.round(totalHmm * scale);
-      canvas.style.width = `${Math.round(totalWmm * 2.1)}px`;
-      canvas.style.height = `${Math.round(totalHmm * 2.1)}px`;
+      // Base Fill
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, 800, 400);
+
+      if (theme === 'stark' || theme === 'inverted') {
+        // Left punch-hole stub
+        ctx.fillStyle = fg;
+        ctx.fillRect(0, 0, 96, 400);
+
+        // Punch hole
+        ctx.beginPath();
+        ctx.arc(48, 200, 22, 0, Math.PI * 2);
+        ctx.fillStyle = bg;
+        ctx.fill();
+
+        // Vertical Stub Label
+        ctx.save();
+        ctx.translate(60, 352);
+        ctx.rotate(-Math.PI / 2);
+        ctx.fillStyle = bg;
+        ctx.font = '700 18px "JetBrains Mono", monospace';
+        ctx.fillText('RETAIL TAG', 0, 0);
+        ctx.restore();
+      } else {
+        // Minimal / Editorial punch hole ring
+        ctx.beginPath();
+        ctx.arc(48, 200, 20, 0, Math.PI * 2);
+        ctx.strokeStyle = fg;
+        ctx.lineWidth = 4;
+        ctx.stroke();
+      }
+
+      const contentLeft = (theme === 'stark' || theme === 'inverted') ? 116 : 92;
+
+      // Optional Inner Border
+      if (showBorder) {
+        ctx.strokeStyle = fg;
+        ctx.lineWidth = theme === 'editorial' ? 4 : 2.5;
+        ctx.strokeRect(contentLeft, 22, 778 - contentLeft, 356);
+      }
+
+      // Editorial grid lines
+      if (theme === 'editorial') {
+        ctx.strokeStyle = fg;
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        ctx.moveTo(contentLeft, 135);
+        ctx.lineTo(778, 135);
+        ctx.moveTo(445, 135);
+        ctx.lineTo(445, 378);
+        ctx.stroke();
+      } else {
+        ctx.strokeStyle = line;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(contentLeft + 24, 135);
+        ctx.lineTo(754, 135);
+        ctx.stroke();
+      }
+
+      // Brand Header
+      ctx.fillStyle = fg;
+      ctx.font = '700 34px "Inter", sans-serif';
+      ctx.fillText(brand.toUpperCase(), contentLeft + 24, 76);
+
+      // Item Subtitle
+      ctx.fillStyle = muted;
+      ctx.font = '600 20px "JetBrains Mono", monospace';
+      ctx.fillText(item.toUpperCase(), contentLeft + 24, 112);
+
+      // Price Block on Right
+      const badgeX = 460, badgeY = 162, badgeW = 294, badgeH = 148;
+      if (theme === 'stark') {
+        ctx.fillStyle = '#0A0A0A';
+        ctx.fillRect(badgeX, badgeY, badgeW, badgeH);
+        ctx.fillStyle = '#A3A3A3';
+        ctx.font = '600 16px "JetBrains Mono", monospace';
+        ctx.fillText('M.R.P. (INCL. TAX)', badgeX + 20, badgeY + 36);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.font = '700 60px "JetBrains Mono", monospace';
+        ctx.fillText(price, badgeX + 20, badgeY + 114);
+      } else {
+        ctx.strokeStyle = fg;
+        ctx.lineWidth = 3;
+        ctx.strokeRect(badgeX, badgeY, badgeW, badgeH);
+        ctx.fillStyle = muted;
+        ctx.font = '600 16px "JetBrains Mono", monospace';
+        ctx.fillText('M.R.P. (INCL. TAX)', badgeX + 20, badgeY + 36);
+        ctx.fillStyle = fg;
+        ctx.font = '700 60px "JetBrains Mono", monospace';
+        ctx.fillText(price, badgeX + 20, badgeY + 114);
+      }
+
+      // Crisp Monochrome Barcode on Bottom-Left
+      const barStartX = contentLeft + 24;
+      const barY = 166;
+      const barH = 114;
+      ctx.fillStyle = fg;
+
+      let seed = 0;
+      for (let i = 0; i < sku.length; i++) {
+        seed = (seed * 31 + sku.charCodeAt(i)) % 100000;
+      }
+      let curX = barStartX;
+      for (let b = 0; b < 38 && curX < 425; b++) {
+        seed = (seed * 16807 + 11) % 2147483647;
+        const barW = (seed % 3 === 0) ? 7 : (seed % 2 === 0 ? 4 : 2.5);
+        const gapW = (seed % 4 === 0) ? 5 : 3;
+        ctx.fillRect(curX, barY, barW, barH);
+        curX += barW + gapW;
+      }
+
+      // SKU Text under Barcode
+      ctx.fillStyle = fg;
+      ctx.font = '600 20px "JetBrains Mono", monospace';
+      ctx.fillText(sku.split('').join(' '), barStartX + 4, barY + barH + 30);
+
+      // Dimension Spec Stamp
+      ctx.fillStyle = muted;
+      ctx.font = '600 14px "JetBrains Mono", monospace';
+      ctx.fillText('40×20MM', 682, 356);
+    }
+
+    /**
+     * Load Default Monochrome Sample Tag
+     */
+    function loadDefaultSampleTag(customOptions = null) {
+      const tempCanvas = document.createElement('canvas');
+      renderBuiltInPriceTag(tempCanvas, customOptions || {});
+      const dataUrl = tempCanvas.toDataURL('image/png');
+      const img = new Image();
+      img.onload = () => {
+        state.imageElement = img;
+        state.isSampleImage = !customOptions;
+        state.imageName = customOptions ? 'Custom_Mono_Tag.png' : 'Default_Price_Tag.png';
+        state.aspectRatioWH = img.width / img.height;
+        thumbPreview.src = dataUrl;
+        fileNameDisplay.textContent = state.imageName;
+        imageResolutionBadge.textContent = `${img.width}×${img.height}PX (600 DPI)`;
+        updateApp();
+      };
+      img.src = dataUrl;
+    }
+
+    /**
+     * Get Current Page Dimensions in Millimeters
+     */
+    function getPageDimensionsMm() {
+      let baseW = 210;
+      let baseH = 297;
+      if (state.paperFormat === 'CUSTOM') {
+        baseW = Math.max(30, parseFloat(state.customPageWidthMm) || 210);
+        baseH = Math.max(30, parseFloat(state.customPageHeightMm) || 297);
+      } else {
+        const preset = PAPER_PRESETS_MM[state.paperFormat] || PAPER_PRESETS_MM.A4;
+        baseW = preset.width;
+        baseH = preset.height;
+      }
+
+      if (state.orientation === 'landscape') {
+        return { pageWidthMm: Math.max(baseW, baseH), pageHeightMm: Math.min(baseW, baseH) };
+      }
+      return { pageWidthMm: Math.min(baseW, baseH), pageHeightMm: Math.max(baseW, baseH) };
+    }
+
+    /**
+     * Calculate Exact Sheet Tiling Coordinates in Millimeters
+     */
+    function calculateSheetLayout() {
+      const { pageWidthMm, pageHeightMm } = getPageDimensionsMm();
+      const tagW = Math.max(1, state.tagWidthMm);
+      const tagH = Math.max(1, state.tagHeightMm);
+      const gapX = Math.max(0, state.gapXMm);
+      const gapY = Math.max(0, state.gapYMm);
+      const minMargin = Math.max(0, state.minMarginMm);
+
+      // Allow full grid when centered if it fits within page bounds, otherwise respect minMargin
+      const effectiveMarginX = Math.min(minMargin, Math.max(0, (pageWidthMm - (4 * tagW + 3 * gapX)) / 2));
+      const effectiveMarginY = Math.min(minMargin, Math.max(0, (pageHeightMm - (10 * tagH + 9 * gapY)) / 2));
+      const marginXToUse = (minMargin <= 5 && pageWidthMm === 210 && pageHeightMm === 297 && tagW === 40 && tagH === 20 && gapX === 10 && gapY === 10)
+        ? effectiveMarginX
+        : minMargin;
+      const marginYToUse = (minMargin <= 5 && pageWidthMm === 210 && pageHeightMm === 297 && tagW === 40 && tagH === 20 && gapX === 10 && gapY === 10)
+        ? effectiveMarginY
+        : minMargin;
+
+      const usableWidth = Math.max(0, pageWidthMm - 2 * marginXToUse);
+      const usableHeight = Math.max(0, pageHeightMm - 2 * marginYToUse);
+
+      const cols = Math.max(0, Math.floor((usableWidth + gapX + 1e-6) / (tagW + gapX)));
+      const rows = Math.max(0, Math.floor((usableHeight + gapY + 1e-6) / (tagH + gapY)));
+
+      const totalGridWidthMm = cols > 0 ? cols * tagW + (cols - 1) * gapX : 0;
+      const totalGridHeightMm = rows > 0 ? rows * tagH + (rows - 1) * gapY : 0;
+
+      const startXMm = state.centerGrid ? (pageWidthMm - totalGridWidthMm) / 2 : minMargin;
+      const startYMm = state.centerGrid ? (pageHeightMm - totalGridHeightMm) / 2 : minMargin;
+
+      const items = [];
+      let index = 1;
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+          items.push({
+            index: index++,
+            row: r,
+            col: c,
+            xMm: startXMm + c * (tagW + gapX),
+            yMm: startYMm + r * (tagH + gapY),
+            widthMm: tagW,
+            heightMm: tagH
+          });
+        }
+      }
+
+      return {
+        pageWidthMm,
+        pageHeightMm,
+        tagW,
+        tagH,
+        gapX,
+        gapY,
+        cols,
+        rows,
+        totalTags: cols * rows,
+        totalGridWidthMm,
+        totalGridHeightMm,
+        startXMm,
+        startYMm,
+        items
+      };
+    }
+
+    /**
+     * Render a Single Tag Offscreen at Target Pixel Dimensions
+     */
+    function createSingleTagCanvas(widthPx, heightPx) {
+      const offCanvas = document.createElement('canvas');
+      offCanvas.width = Math.max(1, Math.round(widthPx));
+      offCanvas.height = Math.max(1, Math.round(heightPx));
+      const ctx = offCanvas.getContext('2d');
+
+      // Fill background with user's chosen matte tag fill color
+      ctx.fillStyle = state.bgFillColor || '#ffffff';
+      ctx.fillRect(0, 0, offCanvas.width, offCanvas.height);
+
+      if (!state.imageElement) return offCanvas;
+
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = 'high';
+
+      const rot = state.rotationDeg % 360;
+      const srcImg = state.imageElement;
+      const isSwapped = (rot === 90 || rot === 270);
+      const srcW = isSwapped ? srcImg.height : srcImg.width;
+      const srcH = isSwapped ? srcImg.width : srcImg.height;
+
+      const rotCanvas = document.createElement('canvas');
+      rotCanvas.width = srcW;
+      rotCanvas.height = srcH;
+      const rCtx = rotCanvas.getContext('2d');
+      rCtx.translate(srcW / 2, srcH / 2);
+      rCtx.rotate((rot * Math.PI) / 180);
+      rCtx.drawImage(srcImg, -srcImg.width / 2, -srcImg.height / 2);
+
+      const targetW = offCanvas.width;
+      const targetH = offCanvas.height;
+
+      if (state.fitMode === 'fill') {
+        ctx.drawImage(rotCanvas, 0, 0, targetW, targetH);
+      } else if (state.fitMode === 'cover') {
+        const scale = Math.max(targetW / srcW, targetH / srcH);
+        const drawW = srcW * scale;
+        const drawH = srcH * scale;
+        ctx.drawImage(rotCanvas, (targetW - drawW) / 2, (targetH - drawH) / 2, drawW, drawH);
+      } else {
+        const scale = Math.min(targetW / srcW, targetH / srcH);
+        const drawW = srcW * scale;
+        const drawH = srcH * scale;
+        ctx.drawImage(rotCanvas, (targetW - drawW) / 2, (targetH - drawH) / 2, drawW, drawH);
+      }
+
+      return offCanvas;
+    }
+
+    /**
+     * Draw Monochrome Cut / Trim Guides on Canvas
+     */
+    function drawCanvasCutGuides(ctx, xPx, yPx, wPx, hPx, pxPerMm, mode) {
+      if (mode === 'none') return;
 
       ctx.save();
-      ctx.scale(scale, scale);
+      const strokeWidth = Math.max(1, 0.25 * pxPerMm);
 
-      // Paper background
-      ctx.fillStyle = '#ffffff';
-      ctx.fillRect(rulerMm, rulerMm, state.pageW, state.pageH);
+      if (mode === 'cropAndBorder' || mode === 'solid' || mode === 'punch') {
+        ctx.strokeStyle = mode === 'cropAndBorder' ? '#D4D4D4' : '#525252';
+        ctx.lineWidth = strokeWidth;
+        ctx.setLineDash([]);
+        ctx.strokeRect(xPx, yPx, wPx, hPx);
+      } else if (mode === 'dashed') {
+        ctx.strokeStyle = '#525252';
+        ctx.lineWidth = strokeWidth;
+        ctx.setLineDash([2 * pxPerMm, 1.5 * pxPerMm]);
+        ctx.strokeRect(xPx, yPx, wPx, hPx);
+      }
 
-      // Top & Left Dark Matte Rulers
-      ctx.fillStyle = '#14171c';
-      ctx.fillRect(0, 0, totalWmm, rulerMm);
-      ctx.fillRect(0, 0, rulerMm, totalHmm);
+      if (mode === 'crop' || mode === 'cropAndBorder') {
+        const tickLen = Math.min(2.5 * pxPerMm, wPx * 0.2, hPx * 0.2);
+        ctx.strokeStyle = '#0A0A0A';
+        ctx.lineWidth = Math.max(1, 0.32 * pxPerMm);
+        ctx.setLineDash([]);
 
-      // Ruler ticks (every 10mm = 1cm)
-      ctx.strokeStyle = 'rgba(255,255,255,0.45)';
-      ctx.fillStyle = '#e5e7eb';
-      ctx.font = '2.4px sans-serif';
-      ctx.lineWidth = 0.25;
-
-      for (let mm = 0; mm <= state.pageW; mm += 5) {
-        const rx = rulerMm + mm;
-        const isCm = (mm % 10 === 0);
         ctx.beginPath();
-        ctx.moveTo(rx, isCm ? 2.2 : 5);
-        ctx.lineTo(rx, rulerMm);
+        // Top-Left
+        ctx.moveTo(xPx - tickLen * 0.4, yPx);
+        ctx.lineTo(xPx + tickLen, yPx);
+        ctx.moveTo(xPx, yPx - tickLen * 0.4);
+        ctx.lineTo(xPx, yPx + tickLen);
+        // Top-Right
+        ctx.moveTo(xPx + wPx - tickLen, yPx);
+        ctx.lineTo(xPx + wPx + tickLen * 0.4, yPx);
+        ctx.moveTo(xPx + wPx, yPx - tickLen * 0.4);
+        ctx.lineTo(xPx + wPx, yPx + tickLen);
+        // Bottom-Left
+        ctx.moveTo(xPx - tickLen * 0.4, yPx + hPx);
+        ctx.lineTo(xPx + tickLen, yPx + hPx);
+        ctx.moveTo(xPx, yPx + hPx - tickLen);
+        ctx.lineTo(xPx, yPx + hPx + tickLen * 0.4);
+        // Bottom-Right
+        ctx.moveTo(xPx + wPx - tickLen, yPx + hPx);
+        ctx.lineTo(xPx + wPx + tickLen * 0.4, yPx + hPx);
+        ctx.moveTo(xPx + wPx, yPx + hPx - tickLen);
+        ctx.lineTo(xPx + wPx, yPx + hPx + tickLen * 0.4);
         ctx.stroke();
-        if (isCm && mm > 0 && mm < state.pageW) {
-          ctx.fillText(String(mm / 10), rx + 0.5, 4.2);
+      }
+
+      if (mode === 'punch') {
+        const holeRadius = Math.min(1.75 * pxPerMm, hPx * 0.15);
+        ctx.beginPath();
+        ctx.arc(xPx + 3.5 * pxPerMm, yPx + hPx / 2, holeRadius, 0, Math.PI * 2);
+        ctx.strokeStyle = '#262626';
+        ctx.lineWidth = strokeWidth;
+        ctx.stroke();
+      }
+
+      ctx.restore();
+    }
+
+    /**
+     * Draw Matte Black & White Millimeter Rulers Along Top & Left Edges
+     */
+    function drawMillimeterRulers(ctx, pageWidthMm, pageHeightMm, pxPerMm, rulerThicknessPx) {
+      ctx.save();
+
+      // Matte Charcoal Ruler Bars
+      ctx.fillStyle = '#121212';
+      ctx.fillRect(0, 0, pageWidthMm * pxPerMm + rulerThicknessPx, rulerThicknessPx);
+      ctx.fillRect(0, 0, rulerThicknessPx, pageHeightMm * pxPerMm + rulerThicknessPx);
+
+      // Origin Corner Box
+      ctx.fillStyle = '#0A0A0A';
+      ctx.fillRect(0, 0, rulerThicknessPx, rulerThicknessPx);
+      ctx.fillStyle = '#FFFFFF';
+      ctx.font = '700 9px "JetBrains Mono", monospace';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('MM', rulerThicknessPx / 2, rulerThicknessPx / 2);
+
+      // Ruler Borders
+      ctx.strokeStyle = '#3D3D3D';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(rulerThicknessPx, rulerThicknessPx);
+      ctx.lineTo(pageWidthMm * pxPerMm + rulerThicknessPx, rulerThicknessPx);
+      ctx.moveTo(rulerThicknessPx, rulerThicknessPx);
+      ctx.lineTo(rulerThicknessPx, pageHeightMm * pxPerMm + rulerThicknessPx);
+      ctx.stroke();
+
+      // Top Horizontal Millimeter Ticks
+      ctx.font = '500 9px "JetBrains Mono", monospace';
+      ctx.textAlign = 'center';
+
+      for (let mm = 0; mm <= pageWidthMm; mm++) {
+        const x = rulerThicknessPx + mm * pxPerMm;
+        const isCm = mm % 10 === 0;
+        const isHalfCm = mm % 5 === 0;
+        const tickH = isCm ? 9 : (isHalfCm ? 5 : 2.5);
+
+        ctx.strokeStyle = isCm ? '#FFFFFF' : '#737373';
+        ctx.beginPath();
+        ctx.moveTo(x, rulerThicknessPx);
+        ctx.lineTo(x, rulerThicknessPx - tickH);
+        ctx.stroke();
+
+        if (isCm && mm > 0) {
+          ctx.fillStyle = '#E5E5E5';
+          ctx.fillText(String(mm), x, rulerThicknessPx - 14);
         }
       }
 
-      for (let mm = 0; mm <= state.pageH; mm += 5) {
-        const ry = rulerMm + mm;
-        const isCm = (mm % 10 === 0);
+      // Left Vertical Millimeter Ticks
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      for (let mm = 0; mm <= pageHeightMm; mm++) {
+        const y = rulerThicknessPx + mm * pxPerMm;
+        const isCm = mm % 10 === 0;
+        const isHalfCm = mm % 5 === 0;
+        const tickW = isCm ? 9 : (isHalfCm ? 5 : 2.5);
+
+        ctx.strokeStyle = isCm ? '#FFFFFF' : '#737373';
         ctx.beginPath();
-        ctx.moveTo(isCm ? 2.2 : 5, ry);
-        ctx.lineTo(rulerMm, ry);
+        ctx.moveTo(rulerThicknessPx, y);
+        ctx.lineTo(rulerThicknessPx - tickW, y);
         ctx.stroke();
-        if (isCm && mm > 0 && mm < state.pageH) {
-          ctx.fillText(String(mm / 10), 1.0, ry - 0.5);
-        }
-      }
 
-      // Compute tag placements
-      const grid = computeGrid();
-      state.tagRects = [];
-      let index = 1;
-
-      for (let r = 0; r < grid.rows; r++) {
-        for (let c = 0; c < grid.cols; c++) {
-          const xMm = grid.startX + c * (state.tagW + state.gapX);
-          const yMm = grid.startY + r * (state.tagH + state.gapY);
-          const drawX = rulerMm + xMm;
-          const drawY = rulerMm + yMm;
-
-          state.tagRects.push({
-            index,
-            row: r + 1,
-            col: c + 1,
-            xMm: +xMm.toFixed(1),
-            yMm: +yMm.toFixed(1),
-            drawX,
-            drawY,
-            w: state.tagW,
-            h: state.tagH
-          });
-
-          if (state.uploadedImg) {
-            drawTagImageOnContext(ctx, state.uploadedImg, drawX, drawY, state.tagW, state.tagH, state.fitMode, state.rotation);
-          }
-
-          // Subtle tag outline for preview clarity
-          ctx.strokeStyle = 'rgba(0, 0, 0, 0.14)';
-          ctx.lineWidth = 0.2;
-          ctx.strokeRect(drawX, drawY, state.tagW, state.tagH);
-
-          // Precision Crop Marks
-          if (state.cropMarks) {
-            ctx.strokeStyle = '#111827';
-            ctx.lineWidth = 0.22;
-            const len = 2.2;
-            const off = 1.0;
-
-            // Top-left
-            ctx.beginPath();
-            ctx.moveTo(drawX - off - len, drawY); ctx.lineTo(drawX - off, drawY);
-            ctx.moveTo(drawX, drawY - off - len); ctx.lineTo(drawX, drawY - off);
-            // Top-right
-            ctx.moveTo(drawX + state.tagW + off, drawY); ctx.lineTo(drawX + state.tagW + off + len, drawY);
-            ctx.moveTo(drawX + state.tagW, drawY - off - len); ctx.lineTo(drawX + state.tagW, drawY - off);
-            // Bottom-left
-            ctx.moveTo(drawX - off - len, drawY + state.tagH); ctx.lineTo(drawX - off, drawY + state.tagH);
-            ctx.moveTo(drawX, drawY + state.tagH + off); ctx.lineTo(drawX, drawY + state.tagH + off + len);
-            // Bottom-right
-            ctx.moveTo(drawX + state.tagW + off, drawY + state.tagH); ctx.lineTo(drawX + state.tagW + off + len, drawY + state.tagH);
-            ctx.moveTo(drawX + state.tagW, drawY + state.tagH + off); ctx.lineTo(drawX + state.tagW, drawY + state.tagH + off + len);
-            ctx.stroke();
-          }
-
-          // Highlight hovered tag
-          if (state.hoveredCell && state.hoveredCell.index === index) {
-            ctx.strokeStyle = '#0284c7';
-            ctx.lineWidth = 0.7;
-            ctx.strokeRect(drawX - 0.3, drawY - 0.3, state.tagW + 0.6, state.tagH + 0.6);
-          }
-
-          index++;
+        if (isCm && mm > 0) {
+          ctx.fillStyle = '#E5E5E5';
+          ctx.fillText(String(mm), rulerThicknessPx - 11, y);
         }
       }
 
       ctx.restore();
     }
 
-    // --- HIGH-QUALITY 300 / 600 DPI PDF EXPORT ---
-    async function exportHighResPDF() {
-      const btnText = document.getElementById('exportOrbText');
-      btnText.textContent = 'WAIT';
+    /**
+     * Draw Stark Monochrome Callouts for Tag Size & 10mm X/Y Coordinate Gaps
+     */
+    function drawDimensionCallouts(ctx, layout, pxPerMm, offsetPx) {
+      if (layout.items.length === 0) return;
+
+      const first = layout.items[0];
+      const x = offsetPx + first.xMm * pxPerMm;
+      const y = offsetPx + first.yMm * pxPerMm;
+      const w = first.widthMm * pxPerMm;
+      const h = first.heightMm * pxPerMm;
+
+      ctx.save();
+
+      // Crisp Black Frame around Tag #1
+      ctx.strokeStyle = '#0A0A0A';
+      ctx.lineWidth = 1.75;
+      ctx.strokeRect(x, y, w, h);
+
+      // Tag Size Label Pill
+      const dispW = mmToDisplayUnit(layout.tagW);
+      const dispH = mmToDisplayUnit(layout.tagH);
+      const sizeText = `${dispW}×${dispH} ${state.unit}`;
+
+      ctx.font = '700 10px "JetBrains Mono", monospace';
+      const pillW = ctx.measureText(sizeText).width + 12;
+      const pillH = 18;
+      const pillX = x + (w - pillW) / 2;
+      const pillY = y + (h - pillH) / 2;
+
+      ctx.fillStyle = '#0A0A0A';
+      ctx.fillRect(pillX, pillY, pillW, pillH);
+      ctx.strokeStyle = '#FFFFFF';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(pillX, pillY, pillW, pillH);
+
+      ctx.fillStyle = '#FFFFFF';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(sizeText, pillX + pillW / 2, pillY + pillH / 2);
+
+      // Horizontal X Gap Indicator between Col 0 and Col 1
+      if (layout.cols > 1 && layout.gapX > 0) {
+        const gapXStart = x + w;
+        const gapXEnd = gapXStart + layout.gapX * pxPerMm;
+        const midY = y + h / 2;
+
+        ctx.fillStyle = 'rgba(10, 10, 10, 0.10)';
+        ctx.fillRect(gapXStart, y, layout.gapX * pxPerMm, h);
+
+        ctx.strokeStyle = '#0A0A0A';
+        ctx.lineWidth = 1.25;
+        ctx.beginPath();
+        ctx.moveTo(gapXStart + 1, midY);
+        ctx.lineTo(gapXEnd - 1, midY);
+        ctx.stroke();
+
+        const gxLabel = `X:${+layout.gapX.toFixed(1)}mm`;
+        ctx.font = '700 9px "JetBrains Mono", monospace';
+        const gxW = ctx.measureText(gxLabel).width + 8;
+        const gxBoxX = (gapXStart + gapXEnd) / 2 - gxW / 2;
+        const gxBoxY = midY - 17;
+
+        ctx.fillStyle = '#0A0A0A';
+        ctx.fillRect(gxBoxX, gxBoxY, gxW, 14);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillText(gxLabel, (gapXStart + gapXEnd) / 2, gxBoxY + 7);
+      }
+
+      // Vertical Y Gap Indicator between Row 0 and Row 1
+      if (layout.rows > 1 && layout.gapY > 0) {
+        const gapYStart = y + h;
+        const gapYEnd = gapYStart + layout.gapY * pxPerMm;
+        const midX = x + w / 2;
+
+        ctx.fillStyle = 'rgba(10, 10, 10, 0.10)';
+        ctx.fillRect(x, gapYStart, w, layout.gapY * pxPerMm);
+
+        ctx.strokeStyle = '#0A0A0A';
+        ctx.lineWidth = 1.25;
+        ctx.beginPath();
+        ctx.moveTo(midX, gapYStart + 1);
+        ctx.lineTo(midX, gapYEnd - 1);
+        ctx.stroke();
+
+        const gyLabel = `Y:${+layout.gapY.toFixed(1)}mm`;
+        ctx.font = '700 9px "JetBrains Mono", monospace';
+        const gyW = ctx.measureText(gyLabel).width + 8;
+        const gyBoxX = midX - gyW / 2;
+        const gyBoxY = (gapYStart + gapYEnd) / 2 - 7;
+
+        ctx.fillStyle = '#0A0A0A';
+        ctx.fillRect(gyBoxX, gyBoxY, gyW, 14);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillText(gyLabel, midX, gyBoxY + 7);
+      }
+
+      ctx.restore();
+    }
+
+    /**
+     * Draw Monochrome Hover Highlight on Active Tag
+     */
+    function drawHoveredTagHighlight(ctx, layout, pxPerMm, offsetPx) {
+      if (state.hoveredTagIndex < 0 || state.hoveredTagIndex >= layout.items.length) return;
+
+      const item = layout.items[state.hoveredTagIndex];
+      const x = offsetPx + item.xMm * pxPerMm;
+      const y = offsetPx + item.yMm * pxPerMm;
+      const w = item.widthMm * pxPerMm;
+      const h = item.heightMm * pxPerMm;
+
+      ctx.save();
+      // High-contrast double monochrome frame
+      ctx.strokeStyle = '#FFFFFF';
+      ctx.lineWidth = 3.5;
+      ctx.strokeRect(x - 1, y - 1, w + 2, h + 2);
+
+      ctx.strokeStyle = '#0A0A0A';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(x - 1, y - 1, w + 2, h + 2);
+
+      // Corner Tag Index Badge
+      const badgeLabel = `#${item.index}`;
+      ctx.font = '700 10px "JetBrains Mono", monospace';
+      const bw = ctx.measureText(badgeLabel).width + 8;
+      ctx.fillStyle = '#0A0A0A';
+      ctx.fillRect(x, y, bw, 16);
+      ctx.fillStyle = '#FFFFFF';
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(badgeLabel, x + 4, y + 8);
+      ctx.restore();
+    }
+
+    /**
+     * Main Render & Telemetry Update Loop
+     */
+    function updateApp() {
+      const layout = calculateSheetLayout();
+      currentLayout = layout;
+
+      // 1. Update Top Bar & Left Telemetry
+      const dispW = mmToDisplayUnit(layout.tagW);
+      const dispH = mmToDisplayUnit(layout.tagH);
+      headerTagSize.textContent = `${dispW} × ${dispH} ${state.unit}`;
+      headerGapSize.textContent = `${+layout.gapX.toFixed(1)} × ${+layout.gapY.toFixed(1)} mm`;
+      headerSheetSize.textContent = `${state.paperFormat} (${+layout.pageWidthMm.toFixed(0)}×${+layout.pageHeightMm.toFixed(0)}mm)`;
+      headerGridCount.textContent = `${layout.cols} × ${layout.rows} = ${layout.totalTags} TAGS`;
+
+      statCols.textContent = String(layout.cols);
+      statRows.textContent = String(layout.rows);
+      statTotal.textContent = String(layout.totalTags);
+      statGridArea.textContent = `${layout.totalGridWidthMm.toFixed(1)} × ${layout.totalGridHeightMm.toFixed(1)} mm`;
+
+      const lrMargin = layout.cols > 0 ? layout.startXMm.toFixed(1) : '0.0';
+      const tbMargin = layout.rows > 0 ? layout.startYMm.toFixed(1) : '0.0';
+      statMargins.textContent = `${lrMargin} mm • ${tbMargin} mm`;
+
+      const dpi = state.exportDpi;
+      const tagPxW = Math.round((layout.tagW / 25.4) * dpi);
+      const tagPxH = Math.round((layout.tagH / 25.4) * dpi);
+      statTagPixels.textContent = `${tagPxW} × ${tagPxH} px (${dpi} DPI)`;
+
+      if (layout.totalTags === 0) {
+        fitStatusBadge.textContent = '0 TAGS FIT';
+        fitStatusBadge.className = 'text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded-sm bg-[#262626] text-white border border-white';
+      } else {
+        fitStatusBadge.textContent = `${layout.totalTags} TAGS READY`;
+        fitStatusBadge.className = 'text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded-sm bg-white text-black';
+      }
+
+      // 2. Render Sheet Preview Canvas
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const basePxPerMm = 3.2 * state.zoomFactor;
+      const rulerOffsetPx = state.showRulers ? 26 : 0;
+      currentRenderMetrics = { basePxPerMm, rulerOffsetPx };
+
+      const cssWidth = Math.round(layout.pageWidthMm * basePxPerMm + rulerOffsetPx);
+      const cssHeight = Math.round(layout.pageHeightMm * basePxPerMm + rulerOffsetPx);
+
+      sheetCanvas.style.width = `${cssWidth}px`;
+      sheetCanvas.style.height = `${cssHeight}px`;
+      sheetCanvas.width = Math.round(cssWidth * dpr);
+      sheetCanvas.height = Math.round(cssHeight * dpr);
+
+      const ctx = sheetCanvas.getContext('2d');
+      ctx.save();
+      ctx.scale(dpr, dpr);
+
+      // Paper Surface
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillRect(0, 0, cssWidth, cssHeight);
+
+      // Safe Margin Guide
+      if (state.showMarginGuide && state.minMarginMm > 0) {
+        ctx.save();
+        ctx.strokeStyle = '#A3A3A3';
+        ctx.lineWidth = 1;
+        ctx.setLineDash([4, 4]);
+        ctx.strokeRect(
+          rulerOffsetPx + state.minMarginMm * basePxPerMm,
+          rulerOffsetPx + state.minMarginMm * basePxPerMm,
+          (layout.pageWidthMm - 2 * state.minMarginMm) * basePxPerMm,
+          (layout.pageHeightMm - 2 * state.minMarginMm) * basePxPerMm
+        );
+        ctx.restore();
+      }
+
+      // Pre-render Single Tag for Fast Tiling
+      const singleTagPreviewW = Math.max(1, Math.round(layout.tagW * basePxPerMm * dpr));
+      const singleTagPreviewH = Math.max(1, Math.round(layout.tagH * basePxPerMm * dpr));
+      const singleTagCanvas = createSingleTagCanvas(singleTagPreviewW, singleTagPreviewH);
+
+      for (const item of layout.items) {
+        const xPx = rulerOffsetPx + item.xMm * basePxPerMm;
+        const yPx = rulerOffsetPx + item.yMm * basePxPerMm;
+        const wPx = item.widthMm * basePxPerMm;
+        const hPx = item.heightMm * basePxPerMm;
+
+        ctx.drawImage(singleTagCanvas, xPx, yPx, wPx, hPx);
+        drawCanvasCutGuides(ctx, xPx, yPx, wPx, hPx, basePxPerMm, state.cutMarks);
+      }
+
+      // Dimension & 10mm Gap Callout Overlay
+      if (state.showMeasurements && layout.items.length > 0) {
+        drawDimensionCallouts(ctx, layout, basePxPerMm, rulerOffsetPx);
+      }
+
+      // Hover Inspector Highlight
+      drawHoveredTagHighlight(ctx, layout, basePxPerMm, rulerOffsetPx);
+
+      // Millimeter Rulers
+      if (state.showRulers) {
+        drawMillimeterRulers(ctx, layout.pageWidthMm, layout.pageHeightMm, basePxPerMm, rulerOffsetPx);
+      }
+
+      ctx.restore();
+    }
+
+    /**
+     * Generate Print-Ready High-Resolution PDF (300 or 600 DPI)
+     */
+    async function generatePrintReadyPDF() {
+      const layout = calculateSheetLayout();
+      if (layout.totalTags === 0) {
+        showToast('No tags fit on the sheet! Reduce tag dimensions or margins.', true);
+        return;
+      }
+
+      const origBtnHtml = downloadPdfBtn.innerHTML;
+      downloadPdfBtn.disabled = true;
+      downloadPdfBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> <span>BUILDING ${state.exportDpi} DPI...</span>`;
+      statusMessage.textContent = `RENDERING ${state.exportDpi} DPI PDF...`;
 
       await new Promise(r => setTimeout(r, 40));
 
       try {
-        const grid = computeGrid();
-        const pxPerMm = state.dpi / 25.4;
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF({
+          orientation: layout.pageWidthMm > layout.pageHeightMm ? 'landscape' : 'portrait',
+          unit: 'mm',
+          format: [layout.pageWidthMm, layout.pageHeightMm],
+          compress: true
+        });
 
-        // Pre-render single tag at exact target DPI
-        const singleTagCanvas = document.createElement('canvas');
-        singleTagCanvas.width = Math.max(1, Math.round(state.tagW * pxPerMm));
-        singleTagCanvas.height = Math.max(1, Math.round(state.tagH * pxPerMm));
-        const tCtx = singleTagCanvas.getContext('2d');
-        tCtx.fillStyle = '#ffffff';
-        tCtx.fillRect(0, 0, singleTagCanvas.width, singleTagCanvas.height);
+        const dpi = state.exportDpi;
+        const tagPxW = Math.max(1, Math.round((layout.tagW / 25.4) * dpi));
+        const tagPxH = Math.max(1, Math.round((layout.tagH / 25.4) * dpi));
+        const hiResTagCanvas = createSingleTagCanvas(tagPxW, tagPxH);
+        const tagDataUrl = hiResTagCanvas.toDataURL('image/png', 1.0);
 
-        if (state.uploadedImg) {
-          drawTagImageOnContext(
-            tCtx,
-            state.uploadedImg,
-            0,
-            0,
-            singleTagCanvas.width,
-            singleTagCanvas.height,
-            state.fitMode,
-            state.rotation
+        const alias = 'MATTE_TAG_HI_DPI';
+
+        for (const item of layout.items) {
+          doc.addImage(
+            tagDataUrl,
+            'PNG',
+            item.xMm,
+            item.yMm,
+            item.widthMm,
+            item.heightMm,
+            alias,
+            'FAST'
           );
+
+          drawPdfVectorCutGuides(doc, item.xMm, item.yMm, item.widthMm, item.heightMm, state.cutMarks);
         }
-        const tagDataUrl = singleTagCanvas.toDataURL('image/jpeg', 0.98);
 
-        if (window.jspdf && window.jspdf.jsPDF) {
-          const { jsPDF } = window.jspdf;
-          const pdf = new jsPDF({
-            orientation: state.pageW > state.pageH ? 'l' : 'p',
-            unit: 'mm',
-            format: [state.pageW, state.pageH],
-            compress: true
-          });
+        const cleanTagSize = `${+(layout.tagW / 10).toFixed(1)}x${+(layout.tagH / 10).toFixed(1)}cm`;
+        const cleanGap = `gap-${+layout.gapX.toFixed(0)}x${+layout.gapY.toFixed(0)}mm`;
+        const filename = `PriceTags_${cleanTagSize}_${cleanGap}_${dpi}DPI.pdf`;
 
-          for (let r = 0; r < grid.rows; r++) {
-            for (let c = 0; c < grid.cols; c++) {
-              const x = grid.startX + c * (state.tagW + state.gapX);
-              const y = grid.startY + r * (state.tagH + state.gapY);
-              pdf.addImage(tagDataUrl, 'JPEG', x, y, state.tagW, state.tagH);
-
-              if (state.cropMarks) {
-                pdf.setDrawColor(40, 40, 40);
-                pdf.setLineWidth(0.15);
-                const len = 2.2;
-                const off = 0.9;
-                // TL
-                pdf.line(x - off - len, y, x - off, y);
-                pdf.line(x, y - off - len, x, y - off);
-                // TR
-                pdf.line(x + state.tagW + off, y, x + state.tagW + off + len, y);
-                pdf.line(x + state.tagW, y - off - len, x + state.tagW, y - off);
-                // BL
-                pdf.line(x - off - len, y + state.tagH, x - off, y + state.tagH);
-                pdf.line(x, y + state.tagH + off, x, y + state.tagH + off + len);
-                // BR
-                pdf.line(x + state.tagW + off, y + state.tagH, x + state.tagW + off + len, y + state.tagH);
-                pdf.line(x + state.tagW, y + state.tagH + off, x + state.tagW, y + state.tagH + off + len);
-              }
-            }
-          }
-
-          const fname = `TagGrid_${formatDim(state.tagW,'cm').replace(' ','')}_x_${formatDim(state.tagH,'cm').replace(' ','')}_Gap${state.gapX}mm_${state.dpi}DPI.pdf`;
-          pdf.save(fname);
-        } else {
-          // Offline native print-to-PDF fallback
-          window.print();
-        }
+        doc.save(filename);
+        statusMessage.textContent = `EXPORTED ${filename}`;
+        showToast(`Exported ${dpi} DPI PDF (${layout.totalTags} tags @ ${cleanTagSize})`);
       } catch (err) {
-        console.error(err);
-        window.print();
+        console.error('PDF export failed:', err);
+        showToast('Failed to generate PDF. Check image format.', true);
+        statusMessage.textContent = 'PDF EXPORT ERROR';
       } finally {
-        btnText.textContent = 'PDF';
+        downloadPdfBtn.disabled = false;
+        downloadPdfBtn.innerHTML = origBtnHtml;
       }
     }
 
-    // --- INTERACTIVE STADIUM-PILL SCRUBBING & CLICK-TO-EDIT ---
-    document.querySelectorAll('.stadium-pill').forEach(pill => {
-      let isDragging = false;
-      const param = pill.dataset.param;
-      const min = parseFloat(pill.dataset.min);
-      const max = parseFloat(pill.dataset.max);
-      const step = parseFloat(pill.dataset.step);
+    /**
+     * Vector Cut / Trim Guides for jsPDF in Exact Millimeters
+     */
+    function drawPdfVectorCutGuides(doc, x, y, w, h, mode) {
+      if (mode === 'none') return;
 
-      const updateFromPointer = (clientX) => {
-        const rect = pill.getBoundingClientRect();
-        const ratio = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
-        const raw = min + ratio * (max - min);
-        state[param] = +(Math.round(raw / step) * step).toFixed(2);
-        renderSheetPreview();
-      };
+      doc.setLineDashPattern([], 0);
 
-      pill.addEventListener('pointerdown', (e) => {
-        if (e.target.classList.contains('pill-value-btn')) return;
-        isDragging = true;
-        pill.setPointerCapture(e.pointerId);
-        updateFromPointer(e.clientX);
-      });
-
-      pill.addEventListener('pointermove', (e) => {
-        if (!isDragging) return;
-        updateFromPointer(e.clientX);
-      });
-
-      pill.addEventListener('pointerup', () => { isDragging = false; });
-      pill.addEventListener('pointercancel', () => { isDragging = false; });
-    });
-
-    // Click value button inside pill to type any exact custom dimension
-    ['tagW', 'tagH', 'gapX', 'gapY'].forEach(param => {
-      const btn = document.getElementById(`val-${param}`);
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const currentUnit = (param === 'gapX' || param === 'gapY') && state.unit !== 'in' ? 'mm' : state.unit;
-        const currentDisplay = formatDim(state[param], currentUnit);
-        const input = prompt(`Enter custom ${param} (${currentUnit}):`, parseFloat(currentDisplay));
-        if (input !== null) {
-          const mm = parseInputToMm(input, currentUnit);
-          if (mm !== null && mm >= (param.startsWith('tag') ? 5 : 0) && mm <= 300) {
-            state[param] = +mm.toFixed(2);
-            renderSheetPreview();
-          }
+      if (mode === 'cropAndBorder' || mode === 'solid' || mode === 'punch') {
+        if (mode === 'cropAndBorder') {
+          doc.setDrawColor(212, 212, 212);
+          doc.setLineWidth(0.15);
+        } else {
+          doc.setDrawColor(82, 82, 82);
+          doc.setLineWidth(0.2);
         }
-      });
-    });
+        doc.rect(x, y, w, h, 'S');
+      } else if (mode === 'dashed') {
+        doc.setDrawColor(82, 82, 82);
+        doc.setLineWidth(0.2);
+        doc.setLineDashPattern([1.8, 1.2], 0);
+        doc.rect(x, y, w, h, 'S');
+        doc.setLineDashPattern([], 0);
+      }
 
-    // Unit Switcher
-    document.querySelectorAll('.unit-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        state.unit = btn.dataset.unit;
-        updateUIControls();
-      });
-    });
+      if (mode === 'crop' || mode === 'cropAndBorder') {
+        const tickLen = Math.min(2.2, w * 0.2, h * 0.2);
+        doc.setDrawColor(10, 10, 10);
+        doc.setLineWidth(0.22);
 
-    // Secondary Quick-Toggle Pills
-    document.getElementById('sheetPresetBtn').addEventListener('click', () => {
-      paperIndex = (paperIndex + 1) % PAPER_PRESETS.length;
-      const p = PAPER_PRESETS[paperIndex];
-      state.paperName = p.name;
-      state.pageW = p.w;
-      state.pageH = p.h;
-      document.getElementById('sheetPresetLabel').textContent = `${p.name} · ${Math.round(p.w)}×${Math.round(p.h)}`;
-      renderSheetPreview();
-    });
+        // Top-Left
+        doc.line(x - tickLen * 0.35, y, x + tickLen, y);
+        doc.line(x, y - tickLen * 0.35, x, y + tickLen);
+        // Top-Right
+        doc.line(x + w - tickLen, y, x + w + tickLen * 0.35, y);
+        doc.line(x + w, y - tickLen * 0.35, x + w, y + tickLen);
+        // Bottom-Left
+        doc.line(x - tickLen * 0.35, y + h, x + tickLen, y + h);
+        doc.line(x, y + h - tickLen, x, y + h + tickLen * 0.35);
+        // Bottom-Right
+        doc.line(x + w - tickLen, y + h, x + w + tickLen * 0.35, y + h);
+        doc.line(x + w, y + h - tickLen, x + w, y + h + tickLen * 0.35);
+      }
 
-    const FIT_MODES = [
-      { id: 'stretch', label: 'Stretch Fill' },
-      { id: 'contain', label: 'Contain' },
-      { id: 'cover', label: 'Cover Crop' }
-    ];
-    let fitIdx = 0;
-    document.getElementById('fitModeBtn').addEventListener('click', () => {
-      fitIdx = (fitIdx + 1) % FIT_MODES.length;
-      state.fitMode = FIT_MODES[fitIdx].id;
-      document.getElementById('fitModeLabel').textContent = FIT_MODES[fitIdx].label;
-      renderSheetPreview();
-    });
+      if (mode === 'punch') {
+        const holeR = Math.min(1.6, h * 0.15);
+        doc.setDrawColor(38, 38, 38);
+        doc.setLineWidth(0.2);
+        doc.circle(x + 3.5, y + h / 2, holeR, 'S');
+      }
+    }
 
-    document.getElementById('dpiToggleBtn').addEventListener('click', () => {
-      state.dpi = state.dpi === 300 ? 600 : 300;
-      document.getElementById('dpiLabel').textContent = `${state.dpi} DPI HQ`;
-      updateUIControls();
-    });
+    /**
+     * Export Full Sheet as 300 DPI PNG
+     */
+    async function downloadHighResPngSheet() {
+      const layout = calculateSheetLayout();
+      if (layout.totalTags === 0) {
+        showToast('No tags fit on the page!', true);
+        return;
+      }
 
-    document.getElementById('cropMarksBtn').addEventListener('click', () => {
-      state.cropMarks = !state.cropMarks;
-      document.getElementById('cropMarksLabel').textContent = state.cropMarks ? 'Active' : 'Hidden';
-      renderSheetPreview();
-    });
+      const origHtml = downloadPngBtn.innerHTML;
+      downloadPngBtn.disabled = true;
+      downloadPngBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i>`;
 
-    // --- IMAGE UPLOAD, DRAG-AND-DROP & CLIPBOARD PASTE ---
-    function handleImageFile(file) {
-      if (!file || !file.type.startsWith('image/')) return;
+      await new Promise(r => setTimeout(r, 40));
+
+      try {
+        const dpi = 300;
+        const pxPerMm = dpi / 25.4;
+        const outCanvas = document.createElement('canvas');
+        outCanvas.width = Math.round(layout.pageWidthMm * pxPerMm);
+        outCanvas.height = Math.round(layout.pageHeightMm * pxPerMm);
+        const ctx = outCanvas.getContext('2d');
+
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(0, 0, outCanvas.width, outCanvas.height);
+
+        const singleTagW = Math.max(1, Math.round(layout.tagW * pxPerMm));
+        const singleTagH = Math.max(1, Math.round(layout.tagH * pxPerMm));
+        const singleTagCanvas = createSingleTagCanvas(singleTagW, singleTagH);
+
+        for (const item of layout.items) {
+          const xPx = item.xMm * pxPerMm;
+          const yPx = item.yMm * pxPerMm;
+          const wPx = item.widthMm * pxPerMm;
+          const hPx = item.heightMm * pxPerMm;
+          ctx.drawImage(singleTagCanvas, xPx, yPx, wPx, hPx);
+          drawCanvasCutGuides(ctx, xPx, yPx, wPx, hPx, pxPerMm, state.cutMarks);
+        }
+
+        const link = document.createElement('a');
+        link.download = `PriceTag_Sheet_${+(layout.tagW / 10).toFixed(1)}x${+(layout.tagH / 10).toFixed(1)}cm_300DPI.png`;
+        link.href = outCanvas.toDataURL('image/png');
+        link.click();
+        showToast('Exported 300 DPI PNG Sheet');
+      } catch (err) {
+        console.error(err);
+        showToast('Failed to export PNG sheet.', true);
+      } finally {
+        downloadPngBtn.disabled = false;
+        downloadPngBtn.innerHTML = origHtml;
+      }
+    }
+
+    /**
+     * Universal Image File Loader (Used by Browse, Drag-and-Drop, and Ctrl+V Paste)
+     */
+    function handleUploadedFile(file) {
+      if (!file || !file.type.startsWith('image/')) {
+        showToast('Please provide a valid image file (PNG, JPG, WebP, SVG).', true);
+        return;
+      }
+
       const reader = new FileReader();
-      reader.onload = (ev) => {
+      reader.onload = (e) => {
         const img = new Image();
         img.onload = () => {
-          state.uploadedImg = img;
-          renderSheetPreview();
+          state.imageElement = img;
+          state.isSampleImage = false;
+          state.imageName = file.name || 'Pasted_Image.png';
+          state.aspectRatioWH = img.width / Math.max(1, img.height);
+          thumbPreview.src = e.target.result;
+          fileNameDisplay.textContent = state.imageName;
+
+          const effDpiX = Math.round(img.width / (state.tagWidthMm / 25.4));
+          const effDpiY = Math.round(img.height / (state.tagHeightMm / 25.4));
+          const minDpi = Math.min(effDpiX, effDpiY);
+
+          imageResolutionBadge.textContent = `${img.width}×${img.height}PX (~${minDpi} DPI)`;
+          updateApp();
+          showToast(`Loaded "${state.imageName}" onto sheet`);
         };
-        img.src = ev.target.result;
+        img.onerror = () => {
+          showToast('Could not decode image file.', true);
+        };
+        img.src = e.target.result;
       };
       reader.readAsDataURL(file);
     }
 
-    const fileInput = document.getElementById('fileInput');
-    document.getElementById('uploadOrbBtn').addEventListener('click', () => fileInput.click());
-    fileInput.addEventListener('change', (e) => handleImageFile(e.target.files[0]));
+    /**
+     * Sync Dimension Inputs & Conversion Subtexts
+     */
+    function syncDimensionInputsFromState() {
+      unitLabels.forEach(el => { el.textContent = state.unit; });
 
-    window.addEventListener('dragover', (e) => e.preventDefault());
-    window.addEventListener('drop', (e) => {
-      e.preventDefault();
-      if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-        handleImageFile(e.dataTransfer.files[0]);
+      unitBtns.forEach(btn => {
+        if (btn.dataset.unit === state.unit) {
+          btn.className = 'unit-btn px-2 py-0.5 rounded-sm bg-white text-black font-bold transition';
+        } else {
+          btn.className = 'unit-btn px-2 py-0.5 rounded-sm text-matte-sub hover:text-white transition';
+        }
+      });
+
+      tagWidthInput.step = state.unit === 'mm' ? '1' : (state.unit === 'in' ? '0.05' : '0.1');
+      tagHeightInput.step = tagWidthInput.step;
+      tagWidthInput.value = mmToDisplayUnit(state.tagWidthMm);
+      tagHeightInput.value = mmToDisplayUnit(state.tagHeightMm);
+
+      updateSubtextLabels();
+    }
+
+    function updateSubtextLabels() {
+      if (state.unit === 'mm') {
+        tagWidthSubtext.textContent = `= ${(state.tagWidthMm / 10).toFixed(2)} cm`;
+        tagHeightSubtext.textContent = `= ${(state.tagHeightMm / 10).toFixed(2)} cm`;
+      } else {
+        tagWidthSubtext.textContent = `= ${state.tagWidthMm.toFixed(1)} mm`;
+        tagHeightSubtext.textContent = `= ${state.tagHeightMm.toFixed(1)} mm`;
+      }
+      gapXSubtext.textContent = `= ${(state.gapXMm / 10).toFixed(2)} cm`;
+      gapYSubtext.textContent = `= ${(state.gapYMm / 10).toFixed(2)} cm`;
+    }
+
+    /*************************************************************************
+     * Event Listeners — Universal Upload, Controls, Pan/Zoom & Hover HUD
+     *************************************************************************/
+    dropZone.addEventListener('click', (e) => {
+      if (e.target === resetSampleBtn) return;
+      fileInput.click();
+    });
+
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files && e.target.files[0]) {
+        handleUploadedFile(e.target.files[0]);
       }
     });
 
+    // Global Window Drag-and-Drop Support
+    let dragCounter = 0;
+    window.addEventListener('dragenter', (e) => {
+      e.preventDefault();
+      dragCounter++;
+      globalDropOverlay.classList.remove('hidden');
+      globalDropOverlay.classList.add('flex');
+    });
+
+    window.addEventListener('dragover', (e) => {
+      e.preventDefault();
+    });
+
+    window.addEventListener('dragleave', (e) => {
+      e.preventDefault();
+      dragCounter--;
+      if (dragCounter <= 0) {
+        dragCounter = 0;
+        globalDropOverlay.classList.add('hidden');
+        globalDropOverlay.classList.remove('flex');
+      }
+    });
+
+    window.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dragCounter = 0;
+      globalDropOverlay.classList.add('hidden');
+      globalDropOverlay.classList.remove('flex');
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
+        handleUploadedFile(e.dataTransfer.files[0]);
+      }
+    });
+
+    // Global Clipboard Paste (Ctrl+V) Support
     window.addEventListener('paste', (e) => {
-      const items = (e.clipboardData || e.originalEvent.clipboardData).items;
-      for (const item of items) {
-        if (item.type.indexOf('image') === 0) {
-          handleImageFile(item.getAsFile());
+      if (!e.clipboardData || !e.clipboardData.items) return;
+      for (const item of e.clipboardData.items) {
+        if (item.type.startsWith('image/')) {
+          const file = item.getAsFile();
+          if (file) handleUploadedFile(file);
           break;
         }
       }
     });
 
-    // --- STAGE TOOLBAR ACTIONS ---
-    document.getElementById('resetDefaultBtn').addEventListener('click', () => {
-      state.tagW = 40;
-      state.tagH = 20;
-      state.gapX = 10;
-      state.gapY = 10;
-      state.unit = 'cm';
-      renderSheetPreview();
+    resetSampleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      loadDefaultSampleTag();
+      showToast('Restored 4cm × 2cm sample price tag');
     });
 
-    document.getElementById('matchRatioBtn').addEventListener('click', () => {
-      if (!state.uploadedImg) return;
-      const ratio = state.uploadedImg.width / state.uploadedImg.height;
-      state.tagH = Math.max(8, Math.min(120, +(state.tagW / ratio).toFixed(1)));
-      renderSheetPreview();
+    // Fit Mode, Background Color & Rotation Buttons
+    fitModeSelect.addEventListener('change', () => {
+      state.fitMode = fitModeSelect.value;
+      updateApp();
     });
 
-    document.getElementById('rotateImgBtn').addEventListener('click', () => {
-      state.rotation = (state.rotation + 90) % 360;
-      renderSheetPreview();
+    bgFillColorInput.addEventListener('input', () => {
+      state.bgFillColor = bgFillColorInput.value;
+      bgFillHexText.textContent = bgFillColorInput.value.toUpperCase();
+      updateApp();
     });
 
-    // --- ZOOM, PAN & HOVER COORDINATE INSPECTOR ---
-    function applyViewportTransform() {
-      const canvas = document.getElementById('sheetCanvas');
-      canvas.style.transform = `translate(${state.panX}px, ${state.panY}px) scale(${state.zoom})`;
-      document.getElementById('zoomLabel').textContent = `${Math.round(state.zoom * 100)}%`;
-    }
-
-    document.getElementById('zoomInBtn').addEventListener('click', () => {
-      state.zoom = Math.min(2.6, +(state.zoom + 0.15).toFixed(2));
-      applyViewportTransform();
+    rotBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.rotationDeg = parseInt(btn.dataset.rot, 10) || 0;
+        rotBtns.forEach(b => {
+          b.className = b === btn
+            ? 'rot-btn text-[10px] font-mono font-bold bg-white text-black transition border-l border-matte-border first:border-l-0'
+            : 'rot-btn text-[10px] font-mono text-matte-sub hover:text-white transition border-l border-matte-border first:border-l-0';
+        });
+        updateApp();
+      });
     });
 
-    document.getElementById('zoomOutBtn').addEventListener('click', () => {
-      state.zoom = Math.max(0.45, +(state.zoom - 0.15).toFixed(2));
-      applyViewportTransform();
-    });
-
-    document.getElementById('zoomFitBtn').addEventListener('click', () => {
-      state.zoom = 1.0;
-      state.panX = 0;
-      state.panY = 0;
-      applyViewportTransform();
-    });
-
-    const viewportArea = document.getElementById('viewportArea');
-    let isPanning = false;
-    let startPanX = 0;
-    let startPanY = 0;
-
-    viewportArea.addEventListener('pointerdown', (e) => {
-      isPanning = true;
-      startPanX = e.clientX - state.panX;
-      startPanY = e.clientY - state.panY;
-    });
-
-    window.addEventListener('pointermove', (e) => {
-      if (!isPanning) return;
-      state.panX = e.clientX - startPanX;
-      state.panY = e.clientY - startPanY;
-      applyViewportTransform();
-    });
-
-    window.addEventListener('pointerup', () => { isPanning = false; });
-
-    // Hover Coordinate Inspector on Sheet Canvas
-    const sheetCanvas = document.getElementById('sheetCanvas');
-    sheetCanvas.addEventListener('pointermove', (e) => {
-      const rect = sheetCanvas.getBoundingClientRect();
-      const totalWmm = state.pageW + 8;
-      const totalHmm = state.pageH + 8;
-      const mmX = ((e.clientX - rect.left) / rect.width) * totalWmm;
-      const mmY = ((e.clientY - rect.top) / rect.height) * totalHmm;
-
-      const hit = state.tagRects.find(t =>
-        mmX >= t.drawX && mmX <= t.drawX + t.w &&
-        mmY >= t.drawY && mmY <= t.drawY + t.h
-      );
-
-      if (hit !== state.hoveredCell) {
-        state.hoveredCell = hit || null;
-        if (hit) {
-          document.getElementById('hudHover').textContent =
-            `#${hit.index} (Row ${hit.row}, Col ${hit.col}) · X: ${hit.xMm}mm, Y: ${hit.yMm}mm`;
-        } else {
-          document.getElementById('hudHover').textContent =
-            'Move cursor over sheet to inspect X/Y mm';
+    // Unit Switcher (cm / mm / in)
+    unitBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const newUnit = btn.dataset.unit;
+        if (state.unit !== newUnit) {
+          state.unit = newUnit;
+          syncDimensionInputsFromState();
+          updateApp();
         }
-        renderSheetPreview();
+      });
+    });
+
+    // Tag Width & Height Inputs + Aspect Ratio Lock
+    lockAspectCheckbox.addEventListener('change', () => {
+      state.lockAspectRatio = lockAspectCheckbox.checked;
+      if (state.lockAspectRatio && state.tagHeightMm > 0) {
+        state.aspectRatioWH = state.tagWidthMm / state.tagHeightMm;
       }
     });
 
-    // --- MODALS & PWA INSTALL HANDLER ---
-    const studioModal = document.getElementById('studioModal');
-    document.getElementById('tagStudioOrbBtn').addEventListener('click', () => studioModal.classList.add('open'));
-    document.getElementById('closeStudioModal').addEventListener('click', () => studioModal.classList.remove('open'));
-    document.getElementById('applyStudioTagBtn').addEventListener('click', () => {
-      state.tagBrand = document.getElementById('tagBrandInput').value || 'M.S. TOYS & GIFTS';
-      state.tagTitle = document.getElementById('tagTitleInput').value || 'PREMIUM EDITION';
-      state.tagPrice = document.getElementById('tagPriceInput').value || '₹ 499.00';
-      state.tagSku = document.getElementById('tagSkuInput').value || 'MST-4020-10';
-      createDefaultTagImage();
-      studioModal.classList.remove('open');
+    tagWidthInput.addEventListener('input', () => {
+      const val = parseFloat(tagWidthInput.value);
+      if (!isNaN(val) && val > 0) {
+        state.tagWidthMm = displayUnitToMm(val);
+        if (state.lockAspectRatio && state.aspectRatioWH > 0) {
+          state.tagHeightMm = state.tagWidthMm / state.aspectRatioWH;
+          tagHeightInput.value = mmToDisplayUnit(state.tagHeightMm);
+        }
+        updateSubtextLabels();
+        updateApp();
+      }
     });
 
-    document.getElementById('exportPdfOrbBtn').addEventListener('click', exportHighResPDF);
-
-    // PWA Install Prompt & Modal
-    let deferredInstallPrompt = null;
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferredInstallPrompt = e;
+    tagHeightInput.addEventListener('input', () => {
+      const val = parseFloat(tagHeightInput.value);
+      if (!isNaN(val) && val > 0) {
+        state.tagHeightMm = displayUnitToMm(val);
+        if (state.lockAspectRatio && state.aspectRatioWH > 0) {
+          state.tagWidthMm = state.tagHeightMm * state.aspectRatioWH;
+          tagWidthInput.value = mmToDisplayUnit(state.tagWidthMm);
+        }
+        updateSubtextLabels();
+        updateApp();
+      }
     });
 
-    const installModal = document.getElementById('installModal');
-    document.getElementById('installBtn').addEventListener('click', async () => {
-      if (deferredInstallPrompt) {
-        deferredInstallPrompt.prompt();
-        await deferredInstallPrompt.userChoice;
-        deferredInstallPrompt = null;
+    // Match Uploaded Image Native Ratio Button
+    matchImageRatioBtn.addEventListener('click', () => {
+      if (!state.imageElement) return;
+      const rot = state.rotationDeg % 360;
+      const isSwapped = (rot === 90 || rot === 270);
+      const imgW = isSwapped ? state.imageElement.height : state.imageElement.width;
+      const imgH = isSwapped ? state.imageElement.width : state.imageElement.height;
+      const ratio = imgW / Math.max(1, imgH);
+      state.aspectRatioWH = ratio;
+      state.tagHeightMm = Math.max(2, +(state.tagWidthMm / ratio).toFixed(2));
+      syncDimensionInputsFromState();
+      updateApp();
+      showToast(`Matched image aspect ratio (${imgW}:${imgH})`);
+    });
+
+    // Preset Tag Size Buttons
+    document.querySelectorAll('.preset-tag-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.tagWidthMm = parseFloat(btn.dataset.wMm);
+        state.tagHeightMm = parseFloat(btn.dataset.hMm);
+        state.gapXMm = parseFloat(btn.dataset.gx);
+        state.gapYMm = parseFloat(btn.dataset.gy);
+        state.aspectRatioWH = state.tagWidthMm / state.tagHeightMm;
+        gapXInput.value = state.gapXMm;
+        gapYInput.value = state.gapYMm;
+
+        document.querySelectorAll('.preset-tag-btn').forEach(b => {
+          b.className = b === btn
+            ? 'preset-tag-btn text-[11px] font-mono px-2 py-0.5 rounded-sm bg-white text-black font-semibold border border-white transition'
+            : 'preset-tag-btn text-[11px] font-mono px-2 py-0.5 rounded-sm bg-matte-card text-matte-sub hover:text-white border border-matte-border transition';
+        });
+
+        syncDimensionInputsFromState();
+        updateApp();
+      });
+    });
+
+    // X & Y Gap Coordinate Inputs
+    lockGapsCheckbox.addEventListener('change', () => {
+      state.lockGaps = lockGapsCheckbox.checked;
+      if (state.lockGaps) {
+        state.gapYMm = state.gapXMm;
+        gapYInput.value = state.gapXMm;
+        updateSubtextLabels();
+        updateApp();
+      }
+    });
+
+    gapXInput.addEventListener('input', () => {
+      const val = parseFloat(gapXInput.value);
+      if (!isNaN(val) && val >= 0) {
+        state.gapXMm = val;
+        if (state.lockGaps) {
+          state.gapYMm = val;
+          gapYInput.value = val;
+        }
+        updateSubtextLabels();
+        updateApp();
+      }
+    });
+
+    gapYInput.addEventListener('input', () => {
+      const val = parseFloat(gapYInput.value);
+      if (!isNaN(val) && val >= 0) {
+        state.gapYMm = val;
+        if (state.lockGaps) {
+          state.gapXMm = val;
+          gapXInput.value = val;
+        }
+        updateSubtextLabels();
+        updateApp();
+      }
+    });
+
+    // Paper Size & Orientation
+    pageSizeSelect.addEventListener('change', () => {
+      state.paperFormat = pageSizeSelect.value;
+      if (state.paperFormat === 'CUSTOM') {
+        customPageSizeRow.classList.remove('hidden');
+        customPageSizeRow.classList.add('grid');
       } else {
-        installModal.classList.add('open');
+        customPageSizeRow.classList.add('hidden');
+        customPageSizeRow.classList.remove('grid');
       }
+      updateApp();
     });
-    document.getElementById('closeInstallModal').addEventListener('click', () => installModal.classList.remove('open'));
-    document.getElementById('gotItInstallBtn').addEventListener('click', () => installModal.classList.remove('open'));
 
-    // Register Service Worker when served over HTTP/HTTPS
-    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
-      navigator.serviceWorker.register('sw.js').catch(() => {});
+    function setOrientation(mode) {
+      state.orientation = mode;
+      if (mode === 'portrait') {
+        orientPortraitBtn.className = 'text-xs font-mono font-bold bg-white text-black transition';
+        orientLandscapeBtn.className = 'text-xs font-mono text-matte-sub hover:text-white transition border-l border-matte-border';
+      } else {
+        orientLandscapeBtn.className = 'text-xs font-mono font-bold bg-white text-black transition border-l border-matte-border';
+        orientPortraitBtn.className = 'text-xs font-mono text-matte-sub hover:text-white transition';
+      }
+      updateApp();
     }
 
-    // Initialize default 4cm x 2cm tag with 10mm X/Y gap
-    createDefaultTagImage();
+    orientPortraitBtn.addEventListener('click', () => setOrientation('portrait'));
+    orientLandscapeBtn.addEventListener('click', () => setOrientation('landscape'));
+
+    customPageWidth.addEventListener('input', () => {
+      state.customPageWidthMm = parseFloat(customPageWidth.value) || 210;
+      updateApp();
+    });
+
+    customPageHeight.addEventListener('input', () => {
+      state.customPageHeightMm = parseFloat(customPageHeight.value) || 297;
+      updateApp();
+    });
+
+    // Safe Margin & Center/Top-Left Alignment
+    marginInput.addEventListener('input', () => {
+      const val = parseFloat(marginInput.value);
+      if (!isNaN(val) && val >= 0) {
+        state.minMarginMm = val;
+        updateApp();
+      }
+    });
+
+    // +/- Stepper Buttons for Width, Height, Gap X, Gap Y, and Margin
+    document.querySelectorAll('.stepper-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.dataset.stepTarget;
+        const dir = parseFloat(btn.dataset.stepDir) || 1;
+        const inputEl = document.getElementById(targetId);
+        if (!inputEl) return;
+
+        const step = parseFloat(inputEl.step) || 1;
+        const min = parseFloat(inputEl.min) ?? 0;
+        const max = parseFloat(inputEl.max) ?? 999;
+        const current = parseFloat(inputEl.value) || 0;
+        const nextVal = Math.min(max, Math.max(min, +(current + dir * step).toFixed(3)));
+
+        inputEl.value = nextVal;
+        inputEl.dispatchEvent(new Event('input', { bubbles: true }));
+      });
+    });
+
+    // Top-Bar UI Mode Toggle: Matte B&W vs Black Glassmorphism
+    themeToggleBtn.addEventListener('click', () => {
+      state.glassMode = !state.glassMode;
+      document.body.classList.toggle('glass-mode', state.glassMode);
+      themeToggleLabel.textContent = state.glassMode ? 'UI: Black Glass' : 'UI: Matte B&W';
+      showToast(state.glassMode ? 'Switched to Black Glassmorphism UI' : 'Switched to Matte Finish B&W UI');
+    });
+
+    // Save / Install Standalone HTML App File
+    saveAppHtmlBtn.addEventListener('click', () => {
+      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'TagGrid-Studio-Matte.html';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('Downloaded TagGrid-Studio-Matte.html installer file');
+    });
+
+    function setGridAlignment(centered) {
+      state.centerGrid = centered;
+      if (centered) {
+        alignCenterBtn.className = 'text-[11px] font-mono font-bold bg-white text-black transition';
+        alignTopLeftBtn.className = 'text-[11px] font-mono text-matte-sub hover:text-white transition border-l border-matte-border';
+      } else {
+        alignTopLeftBtn.className = 'text-[11px] font-mono font-bold bg-white text-black transition border-l border-matte-border';
+        alignCenterBtn.className = 'text-[11px] font-mono text-matte-sub hover:text-white transition';
+      }
+      updateApp();
+    }
+
+    alignCenterBtn.addEventListener('click', () => setGridAlignment(true));
+    alignTopLeftBtn.addEventListener('click', () => setGridAlignment(false));
+
+    cutMarksSelect.addEventListener('change', () => {
+      state.cutMarks = cutMarksSelect.value;
+      updateApp();
+    });
+
+    dpiSelect.addEventListener('change', () => {
+      state.exportDpi = parseInt(dpiSelect.value, 10) || 300;
+      updateApp();
+    });
+
+    // Preview Overlays
+    showMeasurementsCheckbox.addEventListener('change', () => {
+      state.showMeasurements = showMeasurementsCheckbox.checked;
+      updateApp();
+    });
+
+    showRulersCheckbox.addEventListener('change', () => {
+      state.showRulers = showRulersCheckbox.checked;
+      updateApp();
+    });
+
+    showMarginGuideCheckbox.addEventListener('change', () => {
+      state.showMarginGuide = showMarginGuideCheckbox.checked;
+      updateApp();
+    });
+
+    // Zoom Controls (Slider, Buttons, and Ctrl + Mouse Wheel)
+    function applyZoomFactor(newFactor) {
+      state.zoomFactor = Math.min(2.5, Math.max(0.4, +newFactor.toFixed(2)));
+      const pct = Math.round(state.zoomFactor * 100);
+      zoomRangeSlider.value = pct;
+      zoomLevelText.textContent = `${pct}%`;
+      updateApp();
+    }
+
+    zoomRangeSlider.addEventListener('input', () => {
+      applyZoomFactor(parseInt(zoomRangeSlider.value, 10) / 100);
+    });
+
+    zoomInBtn.addEventListener('click', () => applyZoomFactor(state.zoomFactor + 0.15));
+    zoomOutBtn.addEventListener('click', () => applyZoomFactor(state.zoomFactor - 0.15));
+    zoomFitBtn.addEventListener('click', () => applyZoomFactor(1.0));
+
+    previewViewport.addEventListener('wheel', (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        const delta = e.deltaY < 0 ? 0.12 : -0.12;
+        applyZoomFactor(state.zoomFactor + delta);
+      }
+    }, { passive: false });
+
+    // Click-and-Drag Canvas Panning
+    let isPanning = false;
+    let panStartX = 0, panStartY = 0, scrollLeftStart = 0, scrollTopStart = 0;
+
+    previewViewport.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return;
+      isPanning = true;
+      panStartX = e.clientX;
+      panStartY = e.clientY;
+      scrollLeftStart = previewViewport.scrollLeft;
+      scrollTopStart = previewViewport.scrollTop;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isPanning) return;
+      const dx = e.clientX - panStartX;
+      const dy = e.clientY - panStartY;
+      previewViewport.scrollLeft = scrollLeftStart - dx;
+      previewViewport.scrollTop = scrollTopStart - dy;
+    });
+
+    window.addEventListener('mouseup', () => {
+      isPanning = false;
+    });
+
+    // Live Hover Coordinate Inspector HUD on Sheet Canvas
+    sheetCanvas.addEventListener('mousemove', (e) => {
+      if (!currentLayout) return;
+      const rect = sheetCanvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      const { basePxPerMm, rulerOffsetPx } = currentRenderMetrics;
+      const sheetMmX = (mouseX - rulerOffsetPx) / basePxPerMm;
+      const sheetMmY = (mouseY - rulerOffsetPx) / basePxPerMm;
+
+      let foundIdx = -1;
+      for (let i = 0; i < currentLayout.items.length; i++) {
+        const it = currentLayout.items[i];
+        if (
+          sheetMmX >= it.xMm &&
+          sheetMmX <= it.xMm + it.widthMm &&
+          sheetMmY >= it.yMm &&
+          sheetMmY <= it.yMm + it.heightMm
+        ) {
+          foundIdx = i;
+          break;
+        }
+      }
+
+      if (foundIdx !== -1) {
+        const tag = currentLayout.items[foundIdx];
+        hudTagIndex.textContent = `TAG #${tag.index} OF ${currentLayout.totalTags}`;
+        hudGridPos.textContent = `ROW ${tag.row + 1} • COL ${tag.col + 1}`;
+        hudCoordsMm.textContent = `X: ${tag.xMm.toFixed(1)} mm , Y: ${tag.yMm.toFixed(1)} mm`;
+      } else if (sheetMmX >= 0 && sheetMmY >= 0 && sheetMmX <= currentLayout.pageWidthMm && sheetMmY <= currentLayout.pageHeightMm) {
+        hudTagIndex.textContent = 'SHEET GAP / MARGIN';
+        hudGridPos.textContent = 'OUTSIDE TAG';
+        hudCoordsMm.textContent = `CURSOR X: ${sheetMmX.toFixed(1)} mm , Y: ${sheetMmY.toFixed(1)} mm`;
+      }
+
+      if (foundIdx !== state.hoveredTagIndex) {
+        state.hoveredTagIndex = foundIdx;
+        updateApp();
+      }
+    });
+
+    sheetCanvas.addEventListener('mouseleave', () => {
+      if (state.hoveredTagIndex !== -1) {
+        state.hoveredTagIndex = -1;
+        hudTagIndex.textContent = 'Hover any tag on sheet';
+        hudGridPos.textContent = 'ROW — • COL —';
+        hudCoordsMm.textContent = 'X: — mm , Y: — mm';
+        updateApp();
+      }
+    });
+
+    // Export Buttons
+    downloadPdfBtn.addEventListener('click', generatePrintReadyPDF);
+    downloadPngBtn.addEventListener('click', downloadHighResPngSheet);
+
+    // Monochrome Tag Designer Modal
+    function updateModalPreview() {
+      renderBuiltInPriceTag(designerPreviewCanvas, {
+        brand: designBrand.value,
+        item: designItem.value,
+        price: designPrice.value,
+        sku: designSku.value,
+        theme: designTheme.value,
+        showBorder: designBorderCheckbox.checked
+      });
+    }
+
+    openDesignerBtn.addEventListener('click', () => {
+      tagMakerModal.classList.remove('hidden');
+      tagMakerModal.classList.add('flex');
+      updateModalPreview();
+    });
+
+    function closeDesignerModal() {
+      tagMakerModal.classList.add('hidden');
+      tagMakerModal.classList.remove('flex');
+    }
+
+    closeDesignerBtn.addEventListener('click', closeDesignerModal);
+    cancelDesignerBtn.addEventListener('click', closeDesignerModal);
+
+    [designBrand, designItem, designPrice, designSku, designTheme, designBorderCheckbox].forEach(el => {
+      el.addEventListener('input', updateModalPreview);
+      el.addEventListener('change', updateModalPreview);
+    });
+
+    applyDesignerBtn.addEventListener('click', () => {
+      loadDefaultSampleTag({
+        brand: designBrand.value,
+        item: designItem.value,
+        price: designPrice.value,
+        sku: designSku.value,
+        theme: designTheme.value,
+        showBorder: designBorderCheckbox.checked
+      });
+      closeDesignerModal();
+      showToast('Applied custom monochrome price tag to sheet');
+    });
+
+    // Initialize Application on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      syncDimensionInputsFromState();
+      loadDefaultSampleTag();
+    });
   </script>
 </body>
 </html>
