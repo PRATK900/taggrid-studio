@@ -1,0 +1,25 @@
+{
+  "name": "TagGrid Studio \u2014 Precision Price Tag Sheet Generator",
+  "short_name": "TagGrid",
+  "description": "4cm x 2cm Price Tag Sheet Generator with 10mm X/Y Gap & 300/600 DPI PDF Export",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#060709",
+  "theme_color": "#080a0c",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
